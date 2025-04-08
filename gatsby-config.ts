@@ -43,6 +43,18 @@ const config: GatsbyConfig = {
             url: `https://github.com/quantably`,
           },
         ],
+        postsPrefix: `/blog`,
+        postsPath: `content/posts`,
+        formatString: `YYYY-MM-DD`,
+        showLineNumbers: false,
+        showCopyButton: true,
+        blogPath: `/blog`,
+        tagsPath: `/tags`,
+        feed: true,
+        feedTitle: `Peter Wooldridge - Blog`,
+        mdx: true,
+        // Limit to 3 posts on the homepage
+        postsPerPage: 3,
       },
     },
     {
