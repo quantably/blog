@@ -122,7 +122,10 @@ const config: GatsbyConfig = {
             }: {
               query: { allPost: IAllPost; site: { siteMetadata: ISiteMetadata } }
             }) =>
-              allPost.nodes.map((post) => {
+              // Additional filter to ensure no drafts in RSS feed
+              allPost.nodes
+                .filter(post => !post.draft) // Filter out any draft posts
+                .map((post) => {
                 const url = site.siteMetadata.siteUrl + post.slug
                 const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`
 
