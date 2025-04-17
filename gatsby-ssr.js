@@ -1,3 +1,6 @@
+// import React from 'react';
+// import Layout from './src/components/layout';
+
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -10,3 +13,8 @@
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `en` })
 }
+
+// export const wrapPageElement = ({ element, props }) => {
+//   console.log(`[gatsby-ssr.js] Wrapping element for path: ${props.location.pathname}`);
+//   return <Layout {...props}>{element}</Layout>;
+// };

@@ -8,3 +8,41 @@ import "./src/style.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+
+import mermaid from 'mermaid';
+// Remove React and Layout imports if only used for wrapPageElement
+// import React from 'react';
+// import Layout from './src/components/layout';
+
+// Switch back to onInitialClientRender
+export const onInitialClientRender = () => {
+  console.log("[gatsby-browser.js] Initializing Mermaid via onInitialClientRender...");
+  mermaid.initialize({
+    startOnLoad: false, // Explicitly prevent auto-start
+    theme: 'default',
+  });
+  // Trigger rendering manually after initial client render
+  try {
+    // Call run() without arguments to render all detected diagrams
+    mermaid.run();
+    console.log("[gatsby-browser.js] Mermaid rendering triggered.");
+  } catch (error) {
+    console.error("[gatsby-browser.js] Error triggering Mermaid rendering:", error);
+  }
+};
+
+// Optional: Re-run Mermaid on route updates if diagrams might be added dynamically
+export const onRouteUpdate = () => {
+  try {
+    mermaid.run(); // Keep run() without args here too
+    console.log("[gatsby-browser.js] Mermaid rendering triggered on route update.");
+  } catch (error) {
+    console.error("[gatsby-browser.js] Error rendering Mermaid on route update:", error);
+  }
+};
+
+// Remove wrapPageElement export
+// export const wrapPageElement = ({ element, props }) => {
+//   console.log(`[gatsby-browser.js] Wrapping element for path: ${props.location.pathname}`);
+//   return <Layout {...props}>{element}</Layout>;
+// };

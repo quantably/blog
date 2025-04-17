@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -19,8 +18,32 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
+          {/* Move Back Button Here (Above Title/Date) */}
+          <div style={{ marginBottom: '1rem' }}> {/* Adjust margin as needed */}
+            <button 
+              onClick={() => window.history.back()} 
+              style={{ background: 'none', border: 'none', padding: 0, color: 'var(--color-primary)', cursor: 'pointer', textDecoration: 'underline' }}
+            >
+              ← Go back
+            </button>
+          </div>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+          {/* Display Tags if they exist */}
+          {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+            <div style={{ marginTop: '-0.5rem', marginBottom: '1rem', fontSize: 'var(--fontSize-0)' }}>
+              Tags:{` `}
+              {post.frontmatter.tags.map((tag, index) => (
+                <React.Fragment key={tag}>
+                  <Link to={`/tags/${tag}/`} style={{ marginRight: '0.5rem' }}>
+                    {tag}
+                  </Link>
+                  {/* Add comma separator except for the last tag - adjust if needed */}
+                  {/* {index < post.frontmatter.tags.length - 1 ? ', ' : ''} */}
+                </React.Fragment>
+              ))}
+            </div>
+          )}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -28,7 +51,8 @@ const BlogPostTemplate = ({
         />
         <hr />
         <footer>
-          <Bio />
+          {/* Remove Bio component */}
+          {/* <Bio /> */}
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -91,6 +115,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

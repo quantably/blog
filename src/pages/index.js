@@ -1,83 +1,86 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+// Note: Layout is applied globally via wrapPageElement
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+// This component now acts as a wrapper that queries markdown
+const HomePage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const mainContent = data.indexPageContent
+  const posts = data.latestBlogPosts.nodes
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+      <section dangerouslySetInnerHTML={{ __html: mainContent.html }} />
 
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
+      <section>
+        <h2>Recent Posts</h2>
+        <table style={{ width: '100%', marginBottom: '1.5rem' }}>
+          <thead>
+            <tr>
+              <th style={{ textAlign: 'left', paddingBottom: '0.5rem' }}>Date</th>
+              <th style={{ textAlign: 'left', paddingBottom: '0.5rem' }}>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            {posts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+              return (
+                <tr key={post.fields.slug}>
+                  <td style={{ whiteSpace: 'nowrap', paddingRight: '1rem', verticalAlign: 'top' }}>
+                    {post.frontmatter.date}
+                  </td>
+                  <td>
                     <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                      {title}
                     </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+        <Link to="/blog">See all posts</Link>
+      </section>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default HomePage
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = ({ data }) => <Seo title={data.indexPageContent.frontmatter.title} />
 
+// Add page query to fetch markdown content
 export const pageQuery = graphql`
-  {
+  query {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    # Query for the specific index.md file for the main content
+    indexPageContent: markdownRemark(fileAbsolutePath: { regex: "/src/pages/index.md$/" }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+    # Query for the 3 most recent blog posts
+    latestBlogPosts: allMarkdownRemark(
+      # Filter for blog posts in content/blog
+      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+      # Sort by date descending
+      sort: { frontmatter: { date: DESC } }
+      # Limit to 3 posts
+      limit: 3
+    ) {
       nodes {
         excerpt
         fields {
