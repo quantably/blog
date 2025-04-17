@@ -8,6 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  // Remove pathPrefix as it's not needed for root custom domain
+  // pathPrefix: "/blog",
   siteMetadata: {
     title: `Peter Wooldridge`,
     author: {
