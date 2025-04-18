@@ -46,7 +46,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
+    "deploy": "echo \"NODE_ENV for deploy: $NODE_ENV\" && gatsby build && gh-pages -d public -b gh-pages",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

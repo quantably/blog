@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Bio from "../components/bio"
 
 // Note: Layout is applied globally via wrapPageElement
 
@@ -14,6 +15,10 @@ const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <section dangerouslySetInnerHTML={{ __html: mainContent.html }} />
+
+      <Bio />
+      
+      <hr style={{marginBottom: '2rem'}} />
 
       <section>
         <h2>Recent Posts</h2>

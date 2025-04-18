@@ -18,9 +18,9 @@ const Bio = () => {
             name
             summary
           }
-          social {
-            twitter
-          }
+          # social { # Commented out
+          #  twitter # Commented out
+          # } # Commented out
         }
       }
     }
@@ -28,7 +28,7 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  // const social = data.site.siteMetadata?.social // Commented out
 
   return (
     <div className="bio">
@@ -36,19 +36,15 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
+        src="../images/profile-pic.jpg"
+        width={75}
+        height={75}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Hi, I'm Peter. I'm an AI leader with over 15 years experience building disruptive AI systems at companies like Monolith, Elsevier, Experian, and IBM). In this site, I share my experiences on real-world strategies for leading AI teams, overcoming project hurdles, leveraging modern tools, and ultimately delivering AI solutions that create tangible business value.
         </p>
       )}
     </div>
