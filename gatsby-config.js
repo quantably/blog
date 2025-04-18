@@ -59,7 +59,6 @@ const plugins = [
   },
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
-  // Google Analytics plugin will be added conditionally below
   {
     resolve: `gatsby-plugin-feed`,
     options: {
@@ -125,8 +124,12 @@ const plugins = [
   },
 ];
 
+// Log the NODE_ENV when gatsby-config.js is loaded
+console.log(`[gatsby-config.js] NODE_ENV: ${process.env.NODE_ENV}`);
+
 // Conditionally add Google Analytics in production
 if (process.env.NODE_ENV === 'production') {
+  console.log('[gatsby-config.js] Adding Google Analytics plugin for production.');
   plugins.splice(6, 0, { // Insert GA config after gatsby-plugin-sharp
     resolve: `gatsby-plugin-google-gtag`,
     options: {
