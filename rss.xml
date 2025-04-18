@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Apr 2025 10:31:45 GMT</lastBuildDate><item><title><![CDATA[About]]></title><description><![CDATA[My Journey in AI and Data Science With 15 years in the technology sector and over a decade focused on data science and AI, I've built…]]></description><link>https://quantably.co/about/</link><guid isPermaLink="false">https://quantably.co/about/</guid><content:encoded>&lt;h2&gt;My Journey in AI and Data Science&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Apr 2025 12:22:18 GMT</lastBuildDate><item><title><![CDATA[About]]></title><description><![CDATA[My Journey in AI and Data Science With 15 years in the technology sector and over a decade focused on data science and AI, I've built…]]></description><link>https://quantably.co/about/</link><guid isPermaLink="false">https://quantably.co/about/</guid><content:encoded>&lt;h2&gt;My Journey in AI and Data Science&lt;/h2&gt;
 &lt;p&gt;With 15 years in the technology sector and over a decade focused on data science and AI, I&apos;ve built practical solutions across industries that deliver measurable business impact. My journey from mathematician to AI team leader has taught me many lessons about what makes AI implementations succeed—and why they often fail.&lt;/p&gt;
 &lt;h2&gt;Lessons That Shape My Approach&lt;/h2&gt;
 &lt;h3&gt;Focus on the Right Data, Not Just More Data&lt;/h3&gt;
@@ -13,7 +13,10 @@
 &lt;p&gt;Working with Quin, a med-tech startup, taught me to adapt ML approaches to device limitations and strict regulatory requirements—valuable experience for any company implementing AI in constrained environments.&lt;/p&gt;
 &lt;h3&gt;Lead with Purpose&lt;/h3&gt;
 &lt;p&gt;At Monolith AI, I&apos;ve led teams of 4 to 20 people across forward-deployed data science, machine learning engineering, and research functions. This experience has refined my leadership approach: small, focused teams driven by clear metrics and business outcomes consistently outperform larger, less directed efforts.&lt;/p&gt;
-&lt;p&gt;My approach is straightforward: understand your data, build simple solutions first, measure what matters to your business, and focus relentlessly on customer outcomes. This methodology consistently delivers AI solutions that work in the real world—not just in the lab.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Home]]></title><link>https://quantably.co/</link><guid isPermaLink="false">https://quantably.co/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Media]]></title><description><![CDATA[Title Description Link AI Career Spotlight An interview with Catherine Breslin where I discuss my journey into AI, leadership, meta-skills…]]></description><link>https://quantably.co/media/</link><guid isPermaLink="false">https://quantably.co/media/</guid><content:encoded>&lt;table&gt;
+&lt;p&gt;My approach is straightforward: understand your data, build simple solutions first, measure what matters to your business, and focus relentlessly on customer outcomes. This methodology consistently delivers AI solutions that work in the real world—not just in the lab.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Home]]></title><link>https://quantably.co/</link><guid isPermaLink="false">https://quantably.co/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Projects]]></title><description><![CDATA[GlucoseInsights GlucoseInsights is an iOS mobile app I developed to help those (like myself) manage their Type 1 Diabetes in and around…]]></description><link>https://quantably.co/projects/</link><guid isPermaLink="false">https://quantably.co/projects/</guid><content:encoded>&lt;h2&gt;GlucoseInsights&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.glucoseinsights.com/&quot;&gt;GlucoseInsights&lt;/a&gt; is an iOS mobile app I developed to help those (like myself) manage their Type 1 Diabetes in and around exercise. It combines workout data, continuous glucose monitoring (CGM) data alongside other metrics to help understand patterns in their data.&lt;/p&gt;
+&lt;h2&gt;StravaTalk&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pwxn/StravaTalk&quot;&gt;StravaTalk&lt;/a&gt; is a conversational interface for Strava data that lets you analyse your activities using natural language. Built with the Atomic Agents framework, it transforms simple English questions into database queries and returns human-friendly responses.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Media]]></title><description><![CDATA[Title Description Link AI Career Spotlight An interview with Catherine Breslin where I discuss my journey into AI, leadership, meta-skills…]]></description><link>https://quantably.co/media/</link><guid isPermaLink="false">https://quantably.co/media/</guid><content:encoded>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&quot;center&quot;&gt;Title&lt;/th&gt;
@@ -28,10 +31,397 @@
 &lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/ai-career-spotlight-peter-wooldridge-catherine-breslin-hfzje/?trackingId=ZbMXcWTRSButGuiWfRKIHw%3D%3D&quot; target=&quot;_blank&quot;&gt;Link →&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[Projects]]></title><description><![CDATA[GlucoseInsights GlucoseInsights is an iOS mobile app I developed to help those (like myself) manage their Type 1 Diabetes in and around…]]></description><link>https://quantably.co/projects/</link><guid isPermaLink="false">https://quantably.co/projects/</guid><content:encoded>&lt;h2&gt;GlucoseInsights&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.glucoseinsights.com/&quot;&gt;GlucoseInsights&lt;/a&gt; is an iOS mobile app I developed to help those (like myself) manage their Type 1 Diabetes in and around exercise. It combines workout data, continuous glucose monitoring (CGM) data alongside other metrics to help understand patterns in their data.&lt;/p&gt;
-&lt;h2&gt;StravaTalk&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/pwxn/StravaTalk&quot;&gt;StravaTalk&lt;/a&gt; is a conversational interface for Strava data that lets you analyse your activities using natural language. Built with the Atomic Agents framework, it transforms simple English questions into database queries and returns human-friendly responses.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Your Company is One Resignation Away from AI Disaster]]></title><description><![CDATA[Imagine halving your programme development time with AI only to realise the entire operation hinges on a single motivated employee who could walk out the door tomorrow.]]></description><link>https://quantably.co/ai-paradox/</link><guid isPermaLink="false">https://quantably.co/ai-paradox/</guid><pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Imagine halving your programme development time with AI only to realise the entire operation hinges on a single motivated employee who could walk out the door tomorrow.&lt;/p&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[Using Claude to Create Professional PowerPoint Presentations]]></title><description><![CDATA[Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can…]]></description><link>https://quantably.co/using-mcps-to-generate-presentations-fast/</link><guid isPermaLink="false">https://quantably.co/using-mcps-to-generate-presentations-fast/</guid><pubDate>Fri, 18 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.&lt;/p&gt;
+&lt;h2&gt;The system I use for fast slide creation&lt;/h2&gt;
+&lt;p&gt;The three main parts to the system are the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Claude Desktop App&lt;/li&gt;
+&lt;li&gt;MCPs:
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fetch&lt;/code&gt; - for researching information for the slides&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;sequential-thinking&lt;/code&gt; - to allow claude to think through the stages needed to create the slides&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;desktop-commander&lt;/code&gt; - to allow claude to execute shell commands such as a &lt;code class=&quot;language-text&quot;&gt;pandoc&lt;/code&gt; for slide creation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A Powerpoint template that matches the output style you want&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Setting Up Your Environment&lt;/h2&gt;
+&lt;h3&gt;Essential Prerequisites&lt;/h3&gt;
+&lt;h4&gt;1. Install Pandoc&lt;/h4&gt;
+&lt;p&gt;Download and install Pandoc from the &lt;a href=&quot;https://pandoc.org/&quot;&gt;official website&lt;/a&gt;. Pandoc is a universal document converter for converting between markup formats, which is used here for transforming Claude&apos;s markdown output into PowerPoint format.&lt;/p&gt;
+&lt;h4&gt;2. Configure MCP Servers&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Claude Desktop&lt;/li&gt;
+&lt;li&gt;Navigate to Settings &gt; Developer &gt; Edit Config&lt;/li&gt;
+&lt;li&gt;Add the following MCP servers to your configuration:
+&lt;ul&gt;
+&lt;li&gt;fetch&lt;/li&gt;
+&lt;li&gt;sequential thinking&lt;/li&gt;
+&lt;li&gt;desktop commander&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Save changes and restart your Claude instance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is what my MCP configuration looks like:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token property&quot;&gt;&quot;mcpServers&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;token property&quot;&gt;&quot;fetch&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;uvx&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;mcp-server-fetch&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;--ignore-robots-txt&quot;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;token property&quot;&gt;&quot;sequential-thinking&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;npx&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;-y&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;@modelcontextprotocol/server-sequential-thinking&quot;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;token property&quot;&gt;&quot;desktop-commander&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;npx&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;-y&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+     &lt;span class=&quot;token string&quot;&gt;&quot;@wonderwhy-er/desktop-commander&quot;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;3. Verify Configuration&lt;/h4&gt;
+&lt;p&gt;After restarting, check that all three MCP servers appear correctly in your settings.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/569c6/mcps-config.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABQElEQVR42r2UfWuDMBCH/Ribls6XGI3G+G6hUDao0O//iW73O20Hpes2kP3xeIkxT5LT03O5JsOkaUJaK0FxW6kvch7PslSe+Y7rXM/yg5UtZALI85Tq2jIVNY2TOAyttKuqJLcibWclAiyaJDF5iYppGjuy1lAU7XmVhAUd9X1DXVdT2zoB42WZC0WRMWgbiWARRuQpFfHqFa9WUhy/EfrT1DOd3AclBCbliZqj5r5e7619RO6LEJdbHtY8nU5HulxmmucPOp/fyWJnPOEZEEoOIczWhALkETnEzq6xwnF/EvIuMz62CPWdEMdfXszCb4RmPfpmwuXIGwpBpDYW3t7yvwidK7gCim2EkIxjS4fDwNXi/i68L3KUF8pt5JLEbvGNGa7xZ+AfIMIw3NNuF9zhk++/Mi8UBP6D8cfEcUif9ZW455KkCW4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Verified MCP Servers in Claude Desktop Settings&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/f058b/mcps-config.png&quot;
+        srcset=&quot;/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/c26ae/mcps-config.png 158w,
+/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/6bdcf/mcps-config.png 315w,
+/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/f058b/mcps-config.png 630w,
+/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/40601/mcps-config.png 945w,
+/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/78612/mcps-config.png 1260w,
+/static/9bd90b5f0e1886e7e66b4d00deb5e7e5/569c6/mcps-config.png 1674w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Preparing Your PowerPoint Template&lt;/h3&gt;
+&lt;p&gt;This step is optional but a template can be used to ensure your AI-generated slides match a given style&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Find a Suitable Theme&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Download a PowerPoint theme that matches your brand or presentation style&lt;/li&gt;
+&lt;li&gt;Microsoft 365 offers various template &lt;a href=&quot;https://create.microsoft.com/en-us/powerpoint-templates&quot;&gt;available here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save as Template&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Open PowerPoint and select File &gt; Save As Template&lt;/li&gt;
+&lt;li&gt;Ensure the file has the proper template extension (.potx)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Label Slide Layouts in Slide Master&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the template and navigate to View &gt; Slide Master&lt;/li&gt;
+&lt;li&gt;In order for Pandoc to correctly use the template. You need to label each slide type clearly as &lt;a href=&quot;https://pandoc.org/chunkedhtml-demo/10.1-structuring-the-slide-show.html&quot;&gt;described here&lt;/a&gt; (e.g., Title Slide, Section Header, Content Slide etc.)&lt;/li&gt;
+&lt;li&gt;These labels help Claude understand which layout to use for different content.&lt;/li&gt;
+&lt;li&gt;Ensure that each pandoc label is mapped to a slide name in ppt. Note: Some templates will already have the names like &quot;Section Header&quot; used, so you can either use them or change to a different slide that you prefer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ee8415dec63ccdd454fa17546146db53/38bc0/slide-naming.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.26582278481012%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACSUlEQVR42n2Sy09TQRTG7x9CQlyBLeVR2tvyqsREAhrcIG7RGCUhws6FiS6IMRGCCGo0xq2i+EBMecSFpCA2JDWg0EKx1oWEh1AKt1a4bW/7c+6lENnwJSeTc+bMN9+c+SS7rZTPnyYIBYOMDg0x4nbTfOUyOTk5FFtLqCqTqT9VjatcxiUXU2A6jtlsPgiTyUR+fj55eXlYLBakCoedqQkPszPTTE9NEfwe5Hr7TZ48ekxD4zlcVZXUn66j4Wwd52squN9zD6/Xi8fjYXx8nMnJSXw+H7NzczQ97ERylTmJxxR0aMmksd5+0M0XQe4V8XFsjODiIoH5BQILiyyvrBDd2mJb2UaJxfgTj5NJp41zrR9eIzlKrbzpe4773QCDr/pxu9/T3NbC/JzfaIqJQzs7OyQSCVRVRdM0I9friqIQF4Rb4gIdV4dfIBUUmLE7nJTaZKxWGyXlFZSdqeVnKGQ06c2RSISkINKykRQv0eub0SiaUKelUnsKR18iWQRh5YlqqqpPYpOdmGx2nLU1B4Qp0fw7EmUjqyKdfV4qpbG2scnmtkImk8kS9iOVFBdxp6ODnt5e7nZ10SGG3nixiYVA4IBQVRPs7qoGmZ7vKU0bI9gVe6l9hUN9SE6HzNrqqthQSYo56bjR3cm36ZlDivah5/uK/q/paBt8Jj5FtrO09IuImMfG+jp/xW3XbrUz+HaAcDiM3+8nINQeFX5hmVD4B5ee9iDpxh4ZHjH8NCG85fs6w4XWFo7l5mIpLDxk4qNCN3hhURH/AEY9XLdh89rKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Renaming slide layouts in PowerPoint Slide Master view for Pandoc compatibility&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ee8415dec63ccdd454fa17546146db53/f058b/slide-naming.png&quot;
+        srcset=&quot;/static/ee8415dec63ccdd454fa17546146db53/c26ae/slide-naming.png 158w,
+/static/ee8415dec63ccdd454fa17546146db53/6bdcf/slide-naming.png 315w,
+/static/ee8415dec63ccdd454fa17546146db53/f058b/slide-naming.png 630w,
+/static/ee8415dec63ccdd454fa17546146db53/40601/slide-naming.png 945w,
+/static/ee8415dec63ccdd454fa17546146db53/78612/slide-naming.png 1260w,
+/static/ee8415dec63ccdd454fa17546146db53/38bc0/slide-naming.png 2834w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;em&gt;Right click slide in master view to rename to pandoc naming convention&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Creating Your Presentation with Claude&lt;/h2&gt;
+&lt;h3&gt;Setting Up Your Claude Project&lt;/h3&gt;
+&lt;p&gt;To orchestrate the whole workflow, I create a Claude Project that I configure with the Project Instructions shown below:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;You are an experienced slide deck creator with expertise in crafting professional, visually appealing presentations. Your skills in information organization, visual communication, and audience engagement make you the perfect creator for compelling PowerPoint presentations. Your mission is to:
+
+Search for the information on [TOPIC] and create a presentation based on your findings. The target audience is [AUDIENCE] and the purpose is to [PURPOSE]. The presentation should be [NUMBER] slides long and convey information in a clear, engaging, and professional manner.
+
+You&apos;ll need to follow these steps in order:
+
+&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; Gather information on [TOPIC] using the fetch tool
+&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; Plan your presentation structure with a variety of slide layouts
+&lt;span class=&quot;token list punctuation&quot;&gt;3.&lt;/span&gt; Create a markdown file in [WORKINGDIR]/[FILENAME].md with the presentation content
+&lt;span class=&quot;token list punctuation&quot;&gt;4.&lt;/span&gt; Convert the markdown file to PowerPoint using pandoc
+
+For the markdown structure, use these formats to create diverse slide types (you do not need to use all, only vary as appropriate to the content):
+
+IMPORTANT: Always include blank lines before and after lists. Proper spacing is essential for markdown formatting to render correctly.
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Title Slide&lt;/span&gt;
+
+Use the YAML metadata block at the top of your document:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;title: &quot;Your Presentation Title&quot;
+subtitle: &quot;Optional Subtitle&quot;
+author: &quot;Presenter Name&quot;
+date: &quot;Date of Presentation&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Section Title Slides&lt;/span&gt;
+
+Use level 1 headings (#) for major section divisions:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Section Title Here&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Content Slides with Bullet Points&lt;/span&gt;
+
+Use level 2 headings (##) with unordered lists:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Content Slide Title&lt;/span&gt;
+
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; First bullet point
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Second bullet point
+  &lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Sub-bullet point&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Two-Column Slides&lt;/span&gt;
+
+Use div containers with specific attributes:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Two-Column Slide Title&lt;/span&gt;
+
+::: {.columns}
+:::: {.column width=&quot;40%&quot;}
+Left column content here
+::::
+:::: {.column width=&quot;60%&quot;}
+Right column content here
+::::
+:::&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Image Slides&lt;/span&gt;
+
+Include images with captions:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Image Slide Title&lt;/span&gt;
+
+&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;[&lt;span class=&quot;token content&quot;&gt;Image Caption&lt;/span&gt;](&lt;span class=&quot;token url&quot;&gt;image_url&lt;/span&gt;)&lt;/span&gt;{width=70%}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Table Slides&lt;/span&gt;
+
+Create tables using markdown syntax:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Table Slide Title&lt;/span&gt;
+
+&lt;span class=&quot;token table&quot;&gt;&lt;span class=&quot;token table-header-row&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-header important&quot;&gt; Header 1 &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-header important&quot;&gt; Header 2 &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-header important&quot;&gt; Header 3 &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;token table-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;----------&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;----------&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;----------&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;token table-data-rows&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Row 1    &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Data     &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Data     &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Row 2    &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Data     &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token table-data&quot;&gt; Data     &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Quote Slides&lt;/span&gt;
+
+Use blockquotes for emphasis:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Quote Slide Title&lt;/span&gt;
+
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt; Important quote or emphasized text here
+&lt;span class=&quot;token blockquote punctuation&quot;&gt;&gt;&lt;/span&gt; — Source of the quote&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;#&lt;/span&gt; Incremental Reveal Slides&lt;/span&gt;
+
+Use the incremental class for step-by-step reveals:
+
+&lt;span class=&quot;token code&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;token code-language&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;token code-block language-markdown&quot;&gt;&lt;span class=&quot;token title important&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;##&lt;/span&gt; Incremental Slide&lt;/span&gt;
+
+::: incremental
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; This point appears first
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Then this point
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Finally this point
+:::&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;```&lt;/span&gt;&lt;/span&gt;
+
+Format all content slides with:
+
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Clear, concise headings as slide titles
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Appropriate content layout based on the slide type
+&lt;span class=&quot;token list punctuation&quot;&gt;-&lt;/span&gt; Citations where relevant
+
+Use [TEMPLATE] as the template for pandoc
+Use [WORKINGDIR] as the directory for where slides should be created
+Use [FILENAME] as the name of the powerpoint slides to create
+
+Use fetch to perform web content searches
+Use execute_command to execute pandoc commands
+Use the sequential-thinking tool to think through how you will solve this problem step-by-step before starting.
+
+First create the markdown file:
+execute_command &quot;echo &apos;YOUR_MARKDOWN_CONTENT&apos; &gt; [WORKINGDIR]/[FILENAME].md&quot;
+
+Then convert it to PowerPoint:
+execute_command &quot;pandoc [WORKINGDIR]/[FILENAME].md -o [WORKINGDIR]/[FILENAME].pptx --reference-doc=[TEMPLATE] --slide-level=2&quot;
+
+When a chat is first created, ask the user for all of the [] placeholder information.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, when you want to create your slides, you can just start a chat a paste all the information required like the example shown below:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;[TOPIC] The New Forest: Historical Evolution and Heritage
+[AUDIENCE] History enthusiasts, visitors, and locals interested in learning about the New Forest&apos;s past
+[PURPOSE] To highlight key historical developments of the New Forest from its royal designation to present day, showcasing how human activity has shaped the landscape over centuries
+[NUMBER] 10-12 slides
+[WORKINGDIR] /Users/Peter/Desktop/test-slides
+[TEMPLATE] /Users/Peter/Documents/slide\ templates/Light\ modernist\ design.potx
+[FILENAME] new-forest-history.pptx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Executing the Slide Creation Process&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a dedicated folder on your computer as working directory for the project&lt;/li&gt;
+&lt;li&gt;Start a chat inside your Claude Project and paste in the details about the slides you want to create&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c3efbe8a808e3deb47d14bc2e245fa74/573d3/prompt.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.63291139240506%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAACmElEQVR42qVU25KaQBD1R1JuVhFQRFBEAcEbuF6iq7umKpXX/P83dPr0MAgxecpD0z0zzOnTt2l1u68UhhMyTYNeXtrU63X/S1qdzldarVIaDgfUbn95+gGOLMsgk8WyTVmbVo/3euWZ0hUgPqPRkObzKcXxvBKsoyikWRhQEIxpMvErXZeQz0HGMDoKEAYOsmxBaZoI2GIRU5JELHMK+AwXXNcRDee+P5K1jqARMgA9z2WQiGazqYBBAK5AI7GzLBEHAALoYGBXrP4KiItRNKvYwQEAYMPRfB5SzOcIUa/HY+8JtAEoABwyGC05BVgDOI5nApamytl0OpF8oiD/ZKgucjHYOwBxWYUfVXmFRh7RGRC0HO7XWQogcoKiQJbLhQo7VuEmDLhIlCDUP6uMsEGoAQivCAkhgh1+RNKx7zj9htbV1nsgA7sBGHBOwC4pQ1suU2l22LqdRHiN/aVEw5XnPUxZE5A/gdsnl73ZtkX9/kNsngytISiCtsHOdQeyZ2F6yn5sdZhhHjBt26BOVyW3nui67Th2KQzGrHzOHfKHiuu+lNF75WrVK1YXHYpi12tos2Rmmo+JaYF+kW9ovy+oKDaU52va7XLWG1qvMskRBMlXU+KIhnjesBRXzgHaQo5OpwPdbu90PO7pcHhj8J3YAC6KLettrS8folvmCXD/ltPlfKQDA+XbtYAAdL3OZBzRTuhB5Kr+8mgg5NL3aoCftwv9/PGd7h/vdL2e6X6/0efHlW7XC31j9idmixToxkdboYW27HDFrTPyRtQfOlJtyWGMF6XsN0wHmhxjBlY6d2CDZwsCG/OMMUUPp6FP53hMXYOLgnLLj/yTGievCkW/fRpEg2IfzvAAT6YBFXFAv7YzMkyTfgPad3Xta3qLggAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Prompting the system for a new slide deck&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c3efbe8a808e3deb47d14bc2e245fa74/f058b/prompt.png&quot;
+        srcset=&quot;/static/c3efbe8a808e3deb47d14bc2e245fa74/c26ae/prompt.png 158w,
+/static/c3efbe8a808e3deb47d14bc2e245fa74/6bdcf/prompt.png 315w,
+/static/c3efbe8a808e3deb47d14bc2e245fa74/f058b/prompt.png 630w,
+/static/c3efbe8a808e3deb47d14bc2e245fa74/40601/prompt.png 945w,
+/static/c3efbe8a808e3deb47d14bc2e245fa74/78612/prompt.png 1260w,
+/static/c3efbe8a808e3deb47d14bc2e245fa74/573d3/prompt.png 1650w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;em&gt;Example of providing the required placeholder information to Claude via chat.&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;As the execution starts you will be asked to allow plugins access to your file system when prompted&lt;/li&gt;
+&lt;li&gt;Monitor as Claude:
+&lt;ul&gt;
+&lt;li&gt;Researches your topic&lt;/li&gt;
+&lt;li&gt;Structures the presentation&lt;/li&gt;
+&lt;li&gt;Creates the slides using your template&lt;/li&gt;
+&lt;li&gt;Saves the completed PowerPoint file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Reviewing and Refining&lt;/h3&gt;
+&lt;p&gt;Once Claude completes the process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Check your output directory for the generated PowerPoint file (sometimes on first open you will need to repair the slides, but mostly after this things look good)&lt;/li&gt;
+&lt;li&gt;Open and review the content and structure&lt;/li&gt;
+&lt;li&gt;Make any necessary adjustments to styling, content ordering, or visual elements&lt;/li&gt;
+&lt;li&gt;Consider providing feedback to Claude for future improvements this can be used to quickly iterate on changes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/aa71ae88940b95504537fa76eea64f41/09d8d/prez.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACjklEQVR42oVTS08TURTuH2npQwsyLZ0+EaQ0tEQTd2oriBuM6dr/YGSBJLowshEXtEWFuCCuq9AKfVDQgtGVC02U0s4UZvoYStvp570XMEZNuMmX88id73z3zDkah7MPnMUCu90OC8eB53nmOxwO5judTrjdbhZbrVZwnAVW3o7hYR98Pi/8fj8Co6MY9Q7g9pAFmomJW5icvINwOIyx8XE4PW7yEQejyQST0QiDwQBdVxe0Wh30ej1M580wczZGzvf1wtzTg3Pkrqu3B0MuHpp0OoW6ogBqB2WlBqffhxFSfXFpCfPz84jFYlhYWGD22I8hGokgGo0iEokyu7y8jLvT96Hr7obm1csX2NzMIb+1hWQmBetFN8aCIbTbKoqlEg4kCbJcgUSsJMmoVqsnOfkkJ4GemXwSOqJS8+59EkVZQnF/H98ORPC+Swheu84uNZtNHB0dMbSI3/wDNKeqKincZnenM3FoLxCFybUk5HoNQlnE18IP8N5B3LwRJB1QUSIKy+Uy9kkxQRAhiOLvmKqs1xXUarVjhbmVY8I3r5fwOf8RO7kcMtkUHIP9CAUpYQeFvT1GSp9OrSAIJxChkL63Wi2isMUIH54SftrOo0MStGdyQ0F/wMee3FbbjLBYLDFlTCEhE4lCkcSVSgXK4SEjZYTZt6cKF/FlZxs7mxtIpddgH/AgRJ5MT6fTwVmH9pERfkhAS3/KxkYWjUYDKml0qSLBMTKMy4EA1tfXkUgkzsTqyioy6TTuPXsCPVUYj8fxc3cXFdLk78UCvFevoJcMKx1sOtT/Ax3wv2EyGGEmQ6+ZmnqAuedzmH06i5nHjzDkHyEbYIONrJ3NZvsHp+tI4fF44HK52GrSmK7nLy0Ym54fgM9DAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image showing generated ppt presentation before AI generation&quot;
+        title=&quot;&quot;
+        src=&quot;/static/aa71ae88940b95504537fa76eea64f41/f058b/prez.png&quot;
+        srcset=&quot;/static/aa71ae88940b95504537fa76eea64f41/c26ae/prez.png 158w,
+/static/aa71ae88940b95504537fa76eea64f41/6bdcf/prez.png 315w,
+/static/aa71ae88940b95504537fa76eea64f41/f058b/prez.png 630w,
+/static/aa71ae88940b95504537fa76eea64f41/40601/prez.png 945w,
+/static/aa71ae88940b95504537fa76eea64f41/78612/prez.png 1260w,
+/static/aa71ae88940b95504537fa76eea64f41/09d8d/prez.png 3012w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;em&gt;An example generated slide deck on the New Forest&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Conclusion: The Future of Presentation Creation&lt;/h2&gt;
+&lt;p&gt;Using Claude Desktop with MCPs to generate PowerPoint presentations significantly speeds up the creation process. While the generated output usually requires some manual review and refinement, the automation of research, content structuring, and initial slide population saves considerable effort.&lt;/p&gt;
+&lt;p&gt;As you become more familiar with the process, you&apos;ll discover ways to further optimise your prompts and templates, resulting in increasingly polished presentations that require minimal manual adjustment.&lt;/p&gt;
+&lt;p&gt;This method provides a practical way to quickly generate presentations that conform to a specific theme, making it useful for various scenarios, from client meetings to internal training.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Your Company is One Resignation Away from AI Disaster]]></title><description><![CDATA[Imagine halving your programme development time with AI only to realise the entire operation hinges on a single motivated employee who could walk out the door tomorrow.]]></description><link>https://quantably.co/ai-paradox/</link><guid isPermaLink="false">https://quantably.co/ai-paradox/</guid><pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Imagine halving your programme development time with AI only to realise the entire operation hinges on a single motivated employee who could walk out the door tomorrow.&lt;/p&gt;
 &lt;!-- excerpt --&gt;
 &lt;p&gt;One corporate training company I spoke to recently faced exactly this dilemma. Their impressive AI success created an unexpected vulnerability.&lt;/p&gt;
 &lt;p&gt;Their AI-secret wasn&apos;t a complex strategy, but a single curious employee who, through trial and error, figured out how to combine LLMs with their deep industry knowledge building well-crafted prompts and applying them throughout their business. AI was used to streamline everything from client discovery, content creation through to quality assurance.&lt;/p&gt;
