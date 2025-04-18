@@ -1,25 +1,25 @@
 ---
 title: "Using Claude to Create Professional PowerPoint Presentations"
-date: "2025-04-16"
+date: "2025-04-18"
 tags:
   - Claude
   - PowerPoint
   - Automation
   - AI
-draft: true
 ---
 
 Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.
 
 ## The system I use for fast slide creation
 
-The whole workflow looks like:
+The three main parts to the system are the following:
 
-1. Claude Desktop
+1. Claude Desktop App
 2. MCPs:
      - `fetch` - for researching information for the slides
      - `sequential-thinking` - to allow claude to think through the stages needed to create the slides
      - `desktop-commander` - to allow claude to execute shell commands such as a `pandoc` for slide creation
+3. A Powerpoint template that matches the output style you want
 
 ## Setting Up Your Environment
 
@@ -36,6 +36,35 @@ Download and install Pandoc from the [official website](https://pandoc.org/). Pa
      - sequential thinking
      - desktop commander
    - Save changes and restart your Claude instance
+
+   Here is what my MCP configuration looks like:
+   ```json
+   {
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch",
+        "--ignore-robots-txt"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
+    }
+  }
+}
+   ```
 #### 3. Verify Configuration
    After restarting, check that all three MCP servers appear correctly in your settings.
 
@@ -43,26 +72,28 @@ Download and install Pandoc from the [official website](https://pandoc.org/). Pa
 
 ### Preparing Your PowerPoint Template
 
-A well-designed template ensures your AI-generated slides maintain professional quality:
+This step is optional but a template can be used to ensure your AI-generated slides match a given style
 
 1. **Find a Suitable Theme**
    - Download a PowerPoint theme that matches your brand or presentation style
    - Microsoft 365 offers various template [available here](https://create.microsoft.com/en-us/powerpoint-templates)
 2. **Save as Template**
    - Open PowerPoint and select File > Save As Template
-   - Ensure the file has the proper template extension
+   - Ensure the file has the proper template extension (.potx)
 3. **Label Slide Layouts in Slide Master**
    - Open the template and navigate to View > Slide Master
-   - Label each slide type clearly (e.g., Title Slide, Section Header, Content Slide)
-   - These labels help Claude understand which layout to use for different content
+   - In order for Pandoc to correctly use the template. You need to label each slide type clearly as [described here](https://pandoc.org/chunkedhtml-demo/10.1-structuring-the-slide-show.html) (e.g., Title Slide, Section Header, Content Slide etc.)
+   - These labels help Claude understand which layout to use for different content. 
+   - Ensure that each pandoc label is mapped to a slide name in ppt. Note: Some templates will already have the names like "Section Header" used, so you can either use them or change to a different slide that you prefer.
+
+![Renaming slide layouts in PowerPoint Slide Master view for Pandoc compatibility](slide-naming.png)
+_Right click slide in master view to rename to pandoc naming convention_
 
 ## Creating Your Presentation with Claude
 
-### Setting Up Your Claude Project & Crafting the MCP
+### Setting Up Your Claude Project
 
-I create a dedicated Claude Project that I set up once and use everytime I want to create a new presentation. 
-
-Once I've created a Claude Project, I add the following information as project instructions:
+To orchestrate the whole workflow, I create a Claude Project that I configure with the Project Instructions shown below:
 
 ````markdown
 You are an experienced slide deck creator with expertise in crafting professional, visually appealing presentations. Your skills in information organization, visual communication, and audience engagement make you the perfect creator for compelling PowerPoint presentations. Your mission is to:
@@ -201,15 +232,29 @@ execute_command "pandoc [WORKINGDIR]/[FILENAME].md -o [WORKINGDIR]/[FILENAME].pp
 When a chat is first created, ask the user for all of the [] placeholder information.
 ````
 
-### Setting Up Your Working Directory
+Then, when you want to create your slides, you can just start a chat a paste all the information required like the example shown below:
 
-- Create a dedicated folder on your computer as working directory for the project
+```markdown
+[TOPIC] The New Forest: Historical Evolution and Heritage
+[AUDIENCE] History enthusiasts, visitors, and locals interested in learning about the New Forest's past
+[PURPOSE] To highlight key historical developments of the New Forest from its royal designation to present day, showcasing how human activity has shaped the landscape over centuries
+[NUMBER] 10-12 slides
+[WORKINGDIR] /Users/Peter/Desktop/test-slides
+[TEMPLATE] /Users/Peter/Documents/slide\ templates/Light\ modernist\ design.potx
+[FILENAME] new-forest-history.pptx
+```
+
 
 ### Executing the Slide Creation Process
 
-1. Start a chat inside your Claude Project
-2. Allow plugins access to your file system when prompted
-3. Monitor as Claude:
+1. Create a dedicated folder on your computer as working directory for the project
+2. Start a chat inside your Claude Project and paste in the details about the slides you want to create
+
+![Prompting the system for a new slide deck](prompt.png)
+_Example of providing the required placeholder information to Claude via chat._
+
+3. As the execution starts you will be asked to allow plugins access to your file system when prompted
+4. Monitor as Claude:
    - Researches your topic
    - Structures the presentation
    - Creates the slides using your template
@@ -219,28 +264,13 @@ When a chat is first created, ask the user for all of the [] placeholder informa
 
 Once Claude completes the process:
 
-1. Check your output directory for the generated PowerPoint file
+1. Check your output directory for the generated PowerPoint file (sometimes on first open you will need to repair the slides, but mostly after this things look good)
 2. Open and review the content and structure
 3. Make any necessary adjustments to styling, content ordering, or visual elements
-4. Consider providing feedback to Claude for future improvements
+4. Consider providing feedback to Claude for future improvements this can be used to quickly iterate on changes
 
-### Enhancing Your Prompts
-
-For more nuanced presentations, consider including these details in your prompt:
-
-- Specific data points or resources that should be incorporated
-- Preferred tone (formal, conversational, technical)
-- Required visualisation types (charts, diagrams, infographics)
-- Time constraints for the presentation delivery
-
-### Leveraging Claude's Content Expertise
-
-Claude excels at creating presentations that focus on outcomes rather than just processes. When crafting your prompt, emphasise:
-
-- The value and impact the presentation should convey
-- Business outcomes relevant to your audience
-- Problem-solution frameworks that demonstrate expertise
-- Clear calls to action for your audience
+![Image showing generated ppt presentation before AI generation](prez.png)
+_An example generated slide deck on the New Forest_
 
 ## Conclusion: The Future of Presentation Creation
 
