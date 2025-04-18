@@ -33,7 +33,7 @@ const HomePage = ({ data, location }) => {
                     {post.frontmatter.date}
                   </td>
                   <td>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link to={`/blog${post.fields.slug}`} itemProp="url">
                       {title}
                     </Link>
                   </td>
@@ -74,8 +74,10 @@ export const pageQuery = graphql`
     }
     # Query for the 3 most recent blog posts
     latestBlogPosts: allMarkdownRemark(
-      # Filter for blog posts in content/blog
-      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+      # Remove the hardcoded isDraft filter
+      filter: {
+        fileAbsolutePath: { regex: "/content/blog/" }
+      }
       # Sort by date descending
       sort: { frontmatter: { date: DESC } }
       # Limit to 3 posts

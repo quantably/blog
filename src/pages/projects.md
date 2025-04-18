@@ -8,4 +8,4 @@ title: Projects
 
 ## StravaTalk
 
-[StravaTalk](https://github.com/pwxn/StravaTalk) is a conversational interface for Strava data that lets you analyze your activities using natural language. Built with the Atomic Agents framework, it transforms simple English questions into database queries and returns human-friendly responses.
+[StravaTalk](https://github.com/pwxn/StravaTalk) is a conversational interface for Strava data that lets you analyse your activities using natural language. Built with the Atomic Agents framework, it transforms simple English questions into database queries and returns human-friendly responses.

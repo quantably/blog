@@ -8,8 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  // Remove pathPrefix as it's not needed for root custom domain
-  // pathPrefix: "/blog",
   siteMetadata: {
     title: `Peter Wooldridge`,
     author: {
@@ -17,7 +15,7 @@ module.exports = {
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://quantably.co`,
     social: {
       twitter: `kylemathews`,
     },
@@ -124,8 +122,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Peter Wooldridge Blog`,
+        short_name: `Peter Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

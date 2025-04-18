@@ -20,9 +20,9 @@ const Layout = ({ location, title, children }) => {
         
         <nav className="desktop-nav">
           <Link to="/blog" style={{ marginRight: '1rem' }}>Blog</Link>
-          <Link to="/about" style={{ marginRight: '1rem' }}>About</Link>
           <Link to="/projects" style={{ marginRight: '1rem' }}>Projects</Link>
-          <Link to="/media">Media</Link>
+          <Link to="/media" style={{ marginRight: '1rem' }}>Media</Link>
+          <Link to="/about" >About</Link>
         </nav>
 
         <button 
@@ -47,9 +47,9 @@ const Layout = ({ location, title, children }) => {
 
       <nav className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
          <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
-         <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
          <Link to="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
          <Link to="/media" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
+         <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
       </nav>
 
       <main>{children}</main>

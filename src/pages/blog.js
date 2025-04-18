@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link to={`/blog${post.fields.slug}`} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
@@ -79,7 +79,6 @@ export const pageQuery = graphql`
       sort: { frontmatter: { date: DESC } }
       filter: {
         fileAbsolutePath: { regex: "/content/blog/" }
-        fields: { isDraft: { ne: true } }
       }
     ) {
       nodes {
