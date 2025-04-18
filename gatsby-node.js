@@ -16,18 +16,15 @@ const tagPageTemplate = path.resolve(`./src/templates/tag-page.js`)
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const isProduction = process.env.NODE_ENV === 'production';
-  reporter.info(`\n--- Running createPages. Production mode: ${isProduction} ---\n`); // Log production status
+  reporter.info(`\n--- Running createPages ---`); // Simplified log
 
-  // Define base filter (blog posts only)
+  // Define base filter (blog posts only) - always used
   const baseFilter = { fileAbsolutePath: { regex: "/content/blog/" } };
-  // Add draft filter in production
-  const productionFilter = isProduction 
-    ? { ...baseFilter, fields: { isDraft: { ne: true } } } 
-    : baseFilter;
+  // No need for productionFilter
 
   // Get all markdown blog posts AND tags, sorted by date
   const result = await graphql(`
+    # Query variables no longer needed for filter
     query CreatePagesQuery($postFilter: MarkdownRemarkFilterInput!, $tagFilter: MarkdownRemarkFilterInput!) {
       postsRemark: allMarkdownRemark(
         sort: { frontmatter: { date: ASC } }
@@ -55,7 +52,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `, { postFilter: productionFilter, tagFilter: productionFilter }) // Pass filter variables
+  `, { postFilter: baseFilter, tagFilter: baseFilter }) // Pass baseFilter always
 
   if (result.errors) {
     reporter.panicOnBuild(
@@ -65,11 +62,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  reporter.info(`Filter applied to queries: ${JSON.stringify(productionFilter)}`); // Log the filter being used
+  // Filter logging removed, createResolvers will log in production
 
   // --- Create Blog Post Pages --- 
   const posts = result.data.postsRemark.nodes
-  reporter.info(`Found ${posts.length} posts after filtering.`); // Log post count
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
@@ -90,7 +86,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // --- Create Tag Pages --- 
   const tags = result.data.tagsGroup.group
-  reporter.info(`Found ${tags.length} unique tags after filtering posts.`); // Log tag count
   if (tags.length > 0) {
     tags.forEach(tag => {
       createPage({
@@ -178,3 +173,51 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+// Add createResolvers to filter drafts globally in production
+exports.createResolvers = ({ createResolvers, reporter }) => {
+  const isProduction = process.env.NODE_ENV === "production";
+
+  // Only apply filter in production
+  if (!isProduction) {
+    reporter.info("Skipping draft filter via createResolvers in development mode.");
+    return;
+  }
+
+  reporter.info("Applying draft filter globally via createResolvers in production mode...");
+
+  createResolvers({
+    Query: {
+      allMarkdownRemark: {
+        // Intercept the resolver for allMarkdownRemark
+        resolve: async (source, args, context, info) => {
+          // Clone args to avoid modifying the original object directly
+          const newArgs = { ...args }; 
+          
+          // Ensure filter and fields objects exist
+          if (!newArgs.filter) newArgs.filter = {};
+          if (!newArgs.filter.fields) newArgs.filter.fields = {};
+
+          // Apply the draft filter ONLY if one isn't already specifically set
+          if (newArgs.filter.fields.isDraft === undefined) {
+            newArgs.filter.fields.isDraft = { ne: true };
+            reporter.info(`Applied draft filter to allMarkdownRemark args: ${JSON.stringify(newArgs.filter)}`);
+          } else {
+            reporter.info(`Draft filter already present in args, not overriding: ${JSON.stringify(newArgs.filter.fields.isDraft)}`);
+          }
+
+          // Call the original resolver with the potentially modified arguments
+          // This ensures other Gatsby plugins or source plugins still function correctly
+          const result = await info.originalResolver(source, newArgs, context, info);
+          
+          // Optional: Log count after filtering if needed
+          // if (result && result.nodes) {
+          //   reporter.info(`allMarkdownRemark resolver returned ${result.nodes.length} nodes after filtering.`);
+          // }
+
+          return result;
+        }
+      }
+    }
+  });
+};
