@@ -156,9 +156,9 @@ module.exports = {
     title: `Peter Wooldridge`,
     author: {
       name: `Peter Wooldridge`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `Living and working in London, Peter Wooldridge explores topics in AI.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Living and working in London, Peter Wooldridge explores topics in AI.`,
     siteUrl: `https://quantably.co`,
     social: {
       twitter: `kylemathews`,
