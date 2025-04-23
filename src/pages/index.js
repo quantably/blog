@@ -22,22 +22,22 @@ const HomePage = ({ data, location }) => {
 
       <section>
         <h2>Recent Posts</h2>
-        <table style={{ width: '100%', marginBottom: '1.5rem' }}>
+        <table className="table-teal">
           <thead>
             <tr>
-              <th style={{ textAlign: 'left', paddingBottom: '0.5rem' }}>Date</th>
-              <th style={{ textAlign: 'left', paddingBottom: '0.5rem' }}>Title</th>
+              <th className="th-teal">Date</th>
+              <th className="th-teal">Title</th>
             </tr>
           </thead>
           <tbody>
             {posts.map(post => {
               const title = post.frontmatter.title || post.fields.slug
               return (
-                <tr key={post.fields.slug}>
-                  <td style={{ whiteSpace: 'nowrap', paddingRight: '1rem', verticalAlign: 'top' }}>
+                <tr key={post.fields.slug} className="tr-teal">
+                  <td className="td-teal td-date">
                     {post.frontmatter.date}
                   </td>
-                  <td>
+                  <td className="td-teal td-title">
                     <Link to={`/blog${post.fields.slug}`} itemProp="url">
                       {title}
                     </Link>
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    # Query for the 3 most recent blog posts
+    # Query for the 5 most recent blog posts
     latestBlogPosts: allMarkdownRemark(
       # Remove the hardcoded isDraft filter
       filter: {
@@ -85,8 +85,8 @@ export const pageQuery = graphql`
       }
       # Sort by date descending
       sort: { frontmatter: { date: DESC } }
-      # Limit to 3 posts
-      limit: 3
+      # Limit to 5 posts
+      limit: 5
     ) {
       nodes {
         excerpt
