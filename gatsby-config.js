@@ -87,8 +87,11 @@ const plugins = [
               })
             })
           },
-          query: `{
-            allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+          query: `{ 
+            allMarkdownRemark(
+              sort: { frontmatter: { date: DESC } } 
+              filter: { fields: { sourceInstanceName: { eq: "blog" } } }
+            ) {
               nodes {
                 excerpt
                 html
@@ -103,7 +106,7 @@ const plugins = [
             }
           }`,
           output: "/rss.xml",
-          title: "Gatsby Starter Blog RSS Feed",
+          title: "Peter Wooldridge | Blog",
         },
       ],
     },

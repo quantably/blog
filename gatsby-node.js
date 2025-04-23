@@ -108,6 +108,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
+    // Get the parent node (File node)
+    const parent = getNode(node.parent);
+    // Get the source instance name from the parent File node
+    const sourceInstanceName = parent.sourceInstanceName;
+
+    // Add the source instance name as a field
+    createNodeField({
+      node,
+      name: `sourceInstanceName`,
+      value: sourceInstanceName,
+    });
+
     const value = createFilePath({ node, getNode })
 
     createNodeField({
@@ -170,6 +182,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Fields {
       slug: String
       isDraft: Boolean
+      sourceInstanceName: String
     }
   `)
 }
