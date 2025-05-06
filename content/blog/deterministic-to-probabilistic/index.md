@@ -7,7 +7,7 @@ tags:
 slug: "/deterministic-to-probabilistic"
 ---
 
-Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations – where 2+2 always equals 4 and the same inputs reliably produce the same outputs. But as we advance into the era of AI agents, we're witnessing a fundamental shift toward probabilistic thinking that's changing what it means to be a software engineer.
+Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations - where 2+2 always equals 4 and the same inputs reliably produce the same outputs. But as we advance into the era of AI agents, we're witnessing a fundamental shift toward probabilistic thinking that's changing what it means to be a software engineer.
 
 ## The Deterministic vs. Probabilistic Paradigm
 
@@ -42,16 +42,13 @@ The first question when considering an agent should be: do I actually need one? 
 
 For engineers who have determined they need to build agent-based systems, several approaches can help navigate the non-deterministic behaviour:
 
-1. **Embrace Structured Outputs** – The goal isn't to coerce these models to become deterministic – their probabilistic nature is precisely what makes them powerful. Instead, we need to leverage that strength while building reliable systems. Tools like the Instructor library can be a great starting point in creating controllable structured outputs from LLM models. 
-
-2. **Self-Validating Systems** – Increasingly, we'll use AI systems to verify results from other AI components, creating internal validation loops. See [LLM-as-a-judge](https://huggingface.co/learn/cookbook/llm_judge) for a practical example of using language models to evaluate other AI outputs.
-
+1. **Embrace Structured Outputs** - The goal isn't to coerce these models to become deterministic - their probabilistic nature is precisely what makes them powerful. Instead, we need to leverage that strength while building reliable systems. Tools like the Instructor library can be a great starting point in creating controllable structured outputs from LLM models.
+2. **Self-Validating Systems** - Increasingly, we'll use AI systems to verify results from other AI components, creating internal validation loops. See [LLM-as-a-judge](https://huggingface.co/learn/cookbook/llm_judge) for a practical example of using language models to evaluate other AI outputs.
 3. **Learn from Existing Systems that Operate Under Uncertainty** – We're not starting from zero. Reinforcement learning and many machine learning techniques already operate under probabilistic uncertainty. We can and should apply these lessons to agent-based systems. Google's [ML Test Score](https://storage.googleapis.com/gweb-research2023-media/pubtools/4156.pdf) provides a fantastic checklist to assess production-readiness of ML systems.
-
-4. **Focus on the Right Problems and Metrics** – Understand the problem you're solving first, not just input/output results or benchmark scores. Ensure your data and metrics accurately represent real-world conditions. Rather than chasing corner cases, evaluate performance across diverse test distributions to build systems that solve the actual problem, not just optimise for artificial metrics.
+4. **Focus on the Right Problems and Metrics** - Understand the problem you're trying to solve first, not just input/output results or benchmark scores. Ensure your data and metrics accurately represent real-world conditions. Rather than chasing corner cases, evaluate performance across diverse test distributions to build systems that solve the actual problem, not just optimise for artificial metrics.
 
 ## The Hybrid Future
 
-The future isn't probabilistic versus deterministic – it's both. We'll need all the strengths of traditional software development alongside these new approaches to probabilistic systems.
+The future isn't probabilistic versus deterministic - it's both. We'll need all the strengths of traditional software development alongside these new approaches to probabilistic systems.
 
 The complementary nature of these paradigms will produce the most powerful results as we build increasingly autonomous and capable systems. Great software engineers will be those who can navigate both worlds effectively, understanding when to apply each approach and how to combine them seamlessly.

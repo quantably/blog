@@ -42,6 +42,8 @@ There is a better way.
 
 AI resilience requires distributing knowledge across the organisation. Rather than concentrating expertise in a few individuals, forward-thinking companies are creating knowledge networks that capture these learnings systematically.
 
+![](pyramid.png "AI Knowledge Pyramid vs Mesh")
+
 Organisations who successfully distribute their AI knowledge and expertise, experience numerous benefits:
 
 - Higher overall productivity and efficiency
