@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 23 Apr 2025 15:04:45 GMT</lastBuildDate><item><title><![CDATA[Using Claude to Create Professional PowerPoint Presentations]]></title><description><![CDATA[Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can…]]></description><link>https://quantably.co/using-mcps-to-generate-presentations-fast/</link><guid isPermaLink="false">https://quantably.co/using-mcps-to-generate-presentations-fast/</guid><pubDate>Fri, 18 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 06 May 2025 15:04:20 GMT</lastBuildDate><item><title><![CDATA[Using Claude to Create Professional PowerPoint Presentations]]></title><description><![CDATA[Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can…]]></description><link>https://quantably.co/using-mcps-to-generate-presentations-fast/</link><guid isPermaLink="false">https://quantably.co/using-mcps-to-generate-presentations-fast/</guid><pubDate>Fri, 18 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.&lt;/p&gt;
 &lt;h2&gt;The system I use for fast slide creation&lt;/h2&gt;
 &lt;p&gt;The three main parts to the system are the following:&lt;/p&gt;
 &lt;ol&gt;
@@ -409,6 +409,38 @@ When a chat is first created, ask the user for all of the [] placeholder informa
 &lt;h2&gt;Building an AI Knowledge Mesh&lt;/h2&gt;
 &lt;p&gt;There is a better way.&lt;/p&gt;
 &lt;p&gt;AI resilience requires distributing knowledge across the organisation. Rather than concentrating expertise in a few individuals, forward-thinking companies are creating knowledge networks that capture these learnings systematically.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/adf9e15de1efe58f15a1a17212d3b4d7/2bef9/pyramid.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOElEQVR42sWT2W8SURTG51/zzUSfTGPUFx9MNDFRq9bW1qXGhGhYIpQWiU0LFDAsqTRQW0CmtINKkU2QtrRlhpkBGwoMS4ew43imEK3BNEajJjeTyc35ne87y0UaDPHbB/kXcJ0hann8OLiex/sj+Msc3iwkOZau53+IQY4GNUtkq0zVj/AQ3QKsTDHprXDIBzedEvmFpSHXdxgA7oDaiYeDoXWukgKpHllM7tOb4HnR4Tg3JNyI+Jl0POD3HmR2ge/B4IRjqQeymcvjE11XkA7gajZxQ6AYl6kiwXXnG1fQ//7lvPXEpYc+3zuogodBh6vQ0ciHCyOSgVtCO4pytc+8wzLVLiY1Jssr2xLqXnG4XEqdCX6cKFrOJtolEqkfKrcKxJhMf/L6s1OD0iuC2dLedioR9Xo98I1/Cpitr8XT+kdyldm6iHlWDQu2KY0J8iJd2fDHwJk7kwMjU2fvKk7fnHC6sUpmJ0tuiKb154fF0bBPrjaA4FPl3KTGaLDYnmtNfM3NAsHu7z5WGK4KZgeFajjXnqiGxHMZcpOrpnOpLcyzpjJaFpaWwbZ+3ip6oduOBWAujQKBQJNDIf+wRDsm041K+XNPpr8t0thX1jpFfrbpZOziqMS6bJerjUqt2Ym67ktnwGwtl+AbVs3h/SsFfe71nCH2krFOmXRjq9hbDEqFaYHf3pybxy9mHofGNvJ4p0K3WbrB4DD8n+32oQ6/g318dxe+rcCfvyoc+V/v+e8o478CfwUjLAlzU5/YNgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pyramid&quot;
+        title=&quot;AI Knowledge Pyramid vs Mesh&quot;
+        src=&quot;/static/adf9e15de1efe58f15a1a17212d3b4d7/f058b/pyramid.png&quot;
+        srcset=&quot;/static/adf9e15de1efe58f15a1a17212d3b4d7/c26ae/pyramid.png 158w,
+/static/adf9e15de1efe58f15a1a17212d3b4d7/6bdcf/pyramid.png 315w,
+/static/adf9e15de1efe58f15a1a17212d3b4d7/f058b/pyramid.png 630w,
+/static/adf9e15de1efe58f15a1a17212d3b4d7/40601/pyramid.png 945w,
+/static/adf9e15de1efe58f15a1a17212d3b4d7/2bef9/pyramid.png 1024w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Organisations who successfully distribute their AI knowledge and expertise, experience numerous benefits:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Higher overall productivity and efficiency&lt;/li&gt;
@@ -455,7 +487,7 @@ When a chat is first created, ask the user for all of the [] placeholder informa
 &lt;/ul&gt;
 &lt;p&gt;If the above sounds like something you could benefit from, feel free to schedule a free call to discuss.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://cal.com/quantably/30min&quot; target=&quot;_blank&quot; className=&quot;book-call-button&quot;&gt;Book a call here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Remember: Sustainable AI implementation is the key to long-term success.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Navigating the Shift from Deterministic to Probabilistic Software Engineering]]></title><description><![CDATA[Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations – where 2+2 always equals 4 and…]]></description><link>https://quantably.co/deterministic-to-probabilistic/</link><guid isPermaLink="false">https://quantably.co/deterministic-to-probabilistic/</guid><pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations – where 2+2 always equals 4 and the same inputs reliably produce the same outputs. But as we advance into the era of AI agents, we&apos;re witnessing a fundamental shift toward probabilistic thinking that&apos;s changing what it means to be a software engineer.&lt;/p&gt;
+&lt;p&gt;Remember: Sustainable AI implementation is the key to long-term success.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Navigating the Shift from Deterministic to Probabilistic Software Engineering]]></title><description><![CDATA[Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations - where 2+2 always equals 4 and…]]></description><link>https://quantably.co/deterministic-to-probabilistic/</link><guid isPermaLink="false">https://quantably.co/deterministic-to-probabilistic/</guid><pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Software engineering is at a crossroads. For decades, the craft has been built on deterministic foundations - where 2+2 always equals 4 and the same inputs reliably produce the same outputs. But as we advance into the era of AI agents, we&apos;re witnessing a fundamental shift toward probabilistic thinking that&apos;s changing what it means to be a software engineer.&lt;/p&gt;
 &lt;h2&gt;The Deterministic vs. Probabilistic Paradigm&lt;/h2&gt;
 &lt;p&gt;Traditional software engineering operates in a binary world: good or bad, pass or fail. When 100% of the tests pass, you can ship your product. It&apos;s clean, predictable, and comfortably black and white.&lt;/p&gt;
 &lt;p&gt;Probabilistic software, on the other hand, abandons these binary outcomes in favour of statistical efficacy. The questions shift from &quot;Will this work?&quot; to &quot;What&apos;s the likelihood of this working?&quot; This reframing is crucial as we build and deploy increasingly autonomous AI systems.&lt;/p&gt;
@@ -477,21 +509,13 @@ When a chat is first created, ask the user for all of the [] placeholder informa
 &lt;h2&gt;Adapting to the Agentic Age&lt;/h2&gt;
 &lt;p&gt;For engineers who have determined they need to build agent-based systems, several approaches can help navigate the non-deterministic behaviour:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Embrace Structured Outputs&lt;/strong&gt; – The goal isn&apos;t to coerce these models to become deterministic – their probabilistic nature is precisely what makes them powerful. Instead, we need to leverage that strength while building reliable systems. Tools like the Instructor library can be a great starting point in creating controllable structured outputs from LLM models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Self-Validating Systems&lt;/strong&gt; – Increasingly, we&apos;ll use AI systems to verify results from other AI components, creating internal validation loops. See &lt;a href=&quot;https://huggingface.co/learn/cookbook/llm_judge&quot;&gt;LLM-as-a-judge&lt;/a&gt; for a practical example of using language models to evaluate other AI outputs.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Learn from Existing Systems that Operate Under Uncertainty&lt;/strong&gt; – We&apos;re not starting from zero. Reinforcement learning and many machine learning techniques already operate under probabilistic uncertainty. We can and should apply these lessons to agent-based systems. Google&apos;s &lt;a href=&quot;https://storage.googleapis.com/gweb-research2023-media/pubtools/4156.pdf&quot;&gt;ML Test Score&lt;/a&gt; provides a fantastic checklist to assess production-readiness of ML systems.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Focus on the Right Problems and Metrics&lt;/strong&gt; – Understand the problem you&apos;re solving first, not just input/output results or benchmark scores. Ensure your data and metrics accurately represent real-world conditions. Rather than chasing corner cases, evaluate performance across diverse test distributions to build systems that solve the actual problem, not just optimise for artificial metrics.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embrace Structured Outputs&lt;/strong&gt; - The goal isn&apos;t to coerce these models to become deterministic - their probabilistic nature is precisely what makes them powerful. Instead, we need to leverage that strength while building reliable systems. Tools like the Instructor library can be a great starting point in creating controllable structured outputs from LLM models.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Validating Systems&lt;/strong&gt; - Increasingly, we&apos;ll use AI systems to verify results from other AI components, creating internal validation loops. See &lt;a href=&quot;https://huggingface.co/learn/cookbook/llm_judge&quot;&gt;LLM-as-a-judge&lt;/a&gt; for a practical example of using language models to evaluate other AI outputs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learn from Existing Systems that Operate Under Uncertainty&lt;/strong&gt; – We&apos;re not starting from zero. Reinforcement learning and many machine learning techniques already operate under probabilistic uncertainty. We can and should apply these lessons to agent-based systems. Google&apos;s &lt;a href=&quot;https://storage.googleapis.com/gweb-research2023-media/pubtools/4156.pdf&quot;&gt;ML Test Score&lt;/a&gt; provides a fantastic checklist to assess production-readiness of ML systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Focus on the Right Problems and Metrics&lt;/strong&gt; - Understand the problem you&apos;re trying to solve first, not just input/output results or benchmark scores. Ensure your data and metrics accurately represent real-world conditions. Rather than chasing corner cases, evaluate performance across diverse test distributions to build systems that solve the actual problem, not just optimise for artificial metrics.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;The Hybrid Future&lt;/h2&gt;
-&lt;p&gt;The future isn&apos;t probabilistic versus deterministic – it&apos;s both. We&apos;ll need all the strengths of traditional software development alongside these new approaches to probabilistic systems.&lt;/p&gt;
+&lt;p&gt;The future isn&apos;t probabilistic versus deterministic - it&apos;s both. We&apos;ll need all the strengths of traditional software development alongside these new approaches to probabilistic systems.&lt;/p&gt;
 &lt;p&gt;The complementary nature of these paradigms will produce the most powerful results as we build increasingly autonomous and capable systems. Great software engineers will be those who can navigate both worlds effectively, understanding when to apply each approach and how to combine them seamlessly.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Building StravaTalk - A Natural Language Interface for Strava Data]]></title><description><![CDATA[In the rapidly evolving world of AI agents, finding the right framework can be challenging. After exploring numerous options that often…]]></description><link>https://quantably.co/conversational-strava/</link><guid isPermaLink="false">https://quantably.co/conversational-strava/</guid><pubDate>Tue, 04 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the rapidly evolving world of AI agents, finding the right framework can be challenging. After exploring numerous options that often added complexity rather than solving problems, I discovered Atomic Agents - a lightweight, flexible framework that perfectly balances sophistication with simplicity. This weekend project lets me analyze years of Strava workout data through natural language questions.&lt;/p&gt;
 &lt;h2&gt;The Challenge&lt;/h2&gt;
 &lt;p&gt;As a running enthusiast, I&apos;ve accumulated years of workout data in Strava. While the platform offers basic analytics, I wanted the ability to query this treasure trove of information using natural language - asking questions like &quot;What was my longest run last month?&quot; or &quot;Show me my average cycling speed this year&quot; without building complex filters or exports.&lt;/p&gt;
