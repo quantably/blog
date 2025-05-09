@@ -2,26 +2,35 @@
 title: About
 ---
 
-## My Journey in AI and Data Science
-With 15 years in the technology sector and over a decade focused on data science and AI, I've built practical solutions across industries that deliver measurable business impact. My journey from mathematician to AI team leader has taught me many lessons about what makes AI implementations succeed—and why they often fail.
+### My Journey in AI and Data Science
 
-## Lessons That Shape My Approach
-### Focus on the Right Data, Not Just More Data
-At IBM, I discovered that carefully selected data often outperforms massive datasets for classical ML models. This principle of quality over quantity continues to guide my approach today.
+My path into AI started during my maths degree. Lectures on linear algebra, probability, and statistics unknowingly built the foundation for a career in AI.
 
-### Start Simple, Measure Everything
-At Elsevier, working on recommender systems taught me the power of simplicity. I learned that basic models often outperform complex ones, and that connecting internal metrics to business outcomes like customer satisfaction and retention is essential for success.
+My first role was as a Software Engineer at IBM. Pure software wasn't my natural fit, so after three years, I switched to AI, where I've been ever since.
 
-### Bridge Research and Product
-The coolest technology means nothing if it doesn't become part of a product that delivers value. I've learned to collaborate closely with product teams to ensure technical innovations translate into customer benefits.
+I'm an AI generalist, having worked across various industries and across the full AI lifecycle - from research to production. 
 
-### Respect the Data Foundation
-At Experian, building transaction classification models reinforced how critical proper data annotation and understanding is to successful AI implementation. Before advanced models, you need solid data foundations.
+With 15 years in tech and over a decade in data science and AI, my focus has been shipping AI solutions with real business impact. My transition from Mathematician to Software Engineer, then to AI leader, taught me what works in AI and what doesn't.
 
-### Adapt to Constraints
-Working with Quin, a med-tech startup, taught me to adapt ML approaches to device limitations and strict regulatory requirements—valuable experience for any company implementing AI in constrained environments.
+### Lessons That Shape My Approach
+Here are a few lesson I picked up along the way that guide how I approach my AI work:
 
-### Lead with Purpose
-At Monolith AI, I've led teams of 4 to 20 people across forward-deployed data science, machine learning engineering, and research functions. This experience has refined my leadership approach: small, focused teams driven by clear metrics and business outcomes consistently outperform larger, less directed efforts.
+#### Focus on the Right Data, Not Just More Data
+At IBM, I learned quality data often beats big data. This principle still shapes my work.
 
-My approach is straightforward: understand your data, build simple solutions first, measure what matters to your business, and focus relentlessly on customer outcomes. This methodology consistently delivers AI solutions that work in the real world—not just in the lab.
+#### Start Simple, Measure Everything
+At Elsevier, working on recommender systems highlighted the power of simplicity. Simpler baselines are crucial before exploring complex models. Elsevier also taught me to link internal metrics to business results, like customer satisfaction and retention.
+
+#### Bridge Tech and Product
+Even the most advanced tech isn't of much use if it doesn't end up in a product that helps people. So, I've learnt to work collaborate closely with product teams. The goal is always to turn technical innovations into real customer benefits.
+
+#### Respect the Data Foundation
+Building transaction classification models at Experian one again drove home a key point: good AI needs good data. Proper data annotation and understanding are foundational. No amount of advanced modelling can make up for poor data.
+
+#### Adapt to Constraints
+At Quin, a med-tech startup, I had to adjust ML methods for on-device limits and tight regulations. That was valuable experience for learning how to adapt situations where AI has to work within tough constraints.
+
+#### Lead with Purpose
+Leading teams at Monolith AI - anywhere from 4 to 20 people in data science, ML engineering, and research - helped hone my leadership style. I've found that small, focused teams with clear goals and business-linked metrics tend to do better than larger, less focused groups.
+
+My approach, put simply is: Understand your data. Build simple things first. Measure what matters to the business. And always, always focus on customer outcomes. I've found this way of working delivers AI solutions that works best in the real world.

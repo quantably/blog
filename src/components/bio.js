@@ -44,7 +44,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Hi, I'm Peter. I'm an AI leader with over 15 years experience building disruptive AI systems at companies like Monolith, Elsevier, Experian, and IBM). In this site, I share my experiences on real-world strategies for leading AI teams, overcoming project hurdles, leveraging modern tools, and ultimately delivering AI solutions that create tangible business value.
+          Hi, I'm Peter. I'm an AI leader with over 15 years of experience, primarily building AI products at companies like Monolith, Elsevier, Experian, and IBM. This site is where I share practical insights: real-world strategies for leading AI teams, navigating project challenges, and using modern tools effectively.
         </p>
       )}
     </div>
