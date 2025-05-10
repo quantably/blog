@@ -5,10 +5,9 @@ tags:
   - Leadership
 ---
 
-The most successful AI projects I've led share a common trait. It's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely: expectation setting.
-<!-- excerpt -->
+The most successful AI projects I've led share a common trait. It's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely<!-- excerpt -->: expectation setting.
 
-AI involves many disciplines: technical expertise, domain knowledge, infrastructure etc. These all matter. But when they're in place, expectation setting is often _the_ determining factor.
+You need the right technology, talent, and infrastructure. Those are a given. But when AI projects fail, it's rarely due to technical shortcomings. It's expectation setting that makes or breaks them.
 
 ## Why AI Demands a New Approach
 
