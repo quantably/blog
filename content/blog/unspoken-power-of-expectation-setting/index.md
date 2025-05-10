@@ -12,22 +12,24 @@ AI involves many disciplines: technical expertise, domain knowledge, infrastruct
 
 ## Why AI Demands a New Approach
 
-Setting expectations isn't a new idea, but it's especially critical in AI. Why?
+Setting expectations isn't a new idea, but it's especially critical in AI. Three key factors make it challenging:
 
-Partly it's related to the hype surrounding AI which means projects often suffer from mismatched expectations more than other areas of tech.
+##### 1. The Hype Factor 
+- AI projects suffer from mismatched expectations more than other tech areas
+- Media coverage creates unrealistic benchmarks
 
-Another is the complexity of the field. It's not always clear what AI can truly do and what its limits are. When delivering AI projects to customers, there's often a lot of 'hidden' work happening behind the scenes that isn't obvious or expected.
+##### 2. Hidden Complexity 
+- It's not always clear what AI can actually do (and what it can't)
+- 'Hidden' work behind the scenes isn't obvious to stakeholders
+- Example: Customers confused when data preparation is allocated a month
 
-Take data preparation, for instance. It's easy to underestimate how much time this takes. I've seen customers confused when reviewing project plans where this phase of the project is allocated a month, showing how misunderstood this foundational work can be. 
-
-Another aspect is the probabilistic nature of AI systems. This is different from deterministic software. With AI, outputs can vary, and they're not always correct as we've seen with LLMs. AI requires the need to think differently about how we judge it's working and when we consider it 'good enough'.
-
-But it's not just external stakeholders. Sometimes the expectation setting needs to be internal. For example, the way AI is developed is different from traditional software engineering, and that takes getting used to. Developing AI tools is more experimental and more trial and error. It's rarely a straight line from start to finish, and there can be bumps in the road. This can be a surprise, even for established tech teams, if they're used to the more predictable timelines of traditional software projects.
-
-AI's unpredictability makes planning and communication tricky. Traditional roadmaps promise features by set dates, but AI progress isn't linear. You might get to 60% accuracy fast, then spend months chasing 85%. "When's the chatbot ready?" needs a nuanced answer. The best product managers build in uncertainty and focus on sharing iterative wins, not just final delivery.
+##### 3. Non-linear Progress 
+- Traditional roadmaps promise features by set dates, but AI progress isn't linear
+- You might reach 60% accuracy quickly, then spend months chasing 85%
+- This affects both internal teams and external stakeholder expectations
 
 ## The Three Layers Where AI Expectations Typically Fail
-These internal challenges are why I've found it helpful to structure commonly missed AI expectation management across three categories:
+These challenges are why I've found it helpful to structure commonly missed AI expectation management across three categories:
 
 1. Technical Reality Expectations
 2. Process Expectations
@@ -60,7 +62,7 @@ Model maintenance is another frequent point of misalignment related to outcomes.
 
 Recognising these three layers reveals common pain points. Despite this, traditional approaches to expectation management often perpetuate the problems they attempt to solve. Below are four approaches I use that directly address these challenges.
 
-##### 1. Create dual reporting structures: 
+##### 1. Create dual reporting structures
 
 Dual reporting means sharing technical metrics with teams and business outcomes with leadership. Remember the executive who disengaged during F1-score discussions (Layer 3)? Same project, different languages. The key is tailoring results to the audience - what matters to one group may be irrelevant to another.
 
