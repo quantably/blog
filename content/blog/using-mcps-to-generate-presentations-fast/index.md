@@ -8,7 +8,7 @@ tags:
   - AI
 ---
 
-Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.
+Creating presentations often takes considerable time. By combining Claude Desktop with MCPs and a custom PowerPoint template, you can automate much of this process. <!-- excerpt --> This guide explains how to configure Claude to generate well-structured presentations based on your specific requirements and theme.
 
 ## The system I use for fast slide creation
 
@@ -192,7 +192,7 @@ Use blockquotes for emphasis:
 ## Quote Slide Title
 
 > Important quote or emphasized text here
-> — Source of the quote
+> - Source of the quote
 ```
 
 # Incremental Reveal Slides

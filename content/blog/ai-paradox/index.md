@@ -18,7 +18,7 @@ Sounds great, right?
 
 But these efficiencies hide a big vulnerability: that their business is one resignation away from AI disaster.
 
-This isn't just hypothetical. The problem became clear during one of the team's post-training analysis calls. The AI expert would usually generate detailed analysis reports right after a training session - giving clients immediate, actionable feedback to discuss during the call. When their AI specialist was unexpectedly absent, there was no one able to step in and generate the reports. The team didn't understand how to use the tools, leaving them floundering on the call risking reputation.
+This isn't just hypothetical. The problem became clear during one of the team's post-training analysis calls. The AI expert would usually generate detailed analysis reports right after a training session - giving clients immediate, actionable feedback to discuss during the call. When their AI specialist was unexpectedly absent, there was no one able to step in and generate the reports. The team didn't understand how to use the tools, leaving them stumbling on the call risking reputation.
 
 This scenario highlights an emerging risk that many businesses adopting AI face. The tool that gives companies a competitive edge can also represent their biggest vulnerability. While everyone rushes to implement AI faster, sustainable implementation is often overlooked.
 
@@ -34,7 +34,7 @@ While AI success stories are celebrated across industries, the vulnerability the
 - Operations departments with streamlined AI workflows known only to their creator
 - Customer service systems built on complex LLM knowledge that lives in a single person's head
 
-In each case, if the AI pioneer leaves, the team is left scrambling. The competitive edge built on their AI skills disappears overnight. This isn't just a people problem – it's a fundamental business risk tied directly to their AI adoption.
+In each case, if the AI pioneer leaves, the team is left scrambling. The competitive edge built on their AI skills disappears overnight. This isn't just a people problem - it's a fundamental business risk tied directly to their AI adoption.
 
 ## Building an AI Knowledge Mesh
 
@@ -44,7 +44,7 @@ AI resilience requires distributing knowledge across the organisation. Rather th
 
 ![](pyramid.png "AI Knowledge Pyramid vs Mesh")
 
-Organisations who successfully distribute their AI knowledge and expertise, experience numerous benefits:
+Organisations who successfully distribute their AI knowledge and expertise, experience multiple benefits:
 
 - Higher overall productivity and efficiency
 - Increased talent retention and knowledge preservation
@@ -90,16 +90,10 @@ Crucially, this isn't a one-time checklist but an ongoing cycle. Regularly revis
 
 ## Building AI Resilience
 
-Having AI initiatives dependent on a few key people is a common challenge, but one you can overcome. 
+Having AI initiatives dependent on a few key people is a common challenge. Overcoming this involves addressing key areas:
 
-I help businesses transform fragile AI dependency into robust, organisation-wide capability, addressing challenges such as:
+- **Identifying hidden risks:** Uncovering where critical AI knowledge gaps and dependencies exist.
+- **Developing a clear roadmap:** Creating practical plans to distribute expertise and build shared understanding.
+- **Implementing sustainable practices:** Embedding strategies for documentation, training, and ongoing knowledge sharing.
 
-- **Identify hidden risks:** Uncover exactly where your critical AI knowledge gaps and dependencies lie.
-- **Develop a clear roadmap:** Create a practical, tailored plan to distribute expertise and build shared understanding.
-- **Implement sustainable practices:** Embed proven strategies for documentation, training, and ongoing knowledge sharing.
-
-If the above sounds like something you could benefit from, feel free to schedule a free call to discuss.
-
-<a href="https://cal.com/quantably/30min" target="_blank" className="book-call-button">Book a call here</a>
-
-Remember: Sustainable AI implementation is the key to long-term success.
+The key to long-term success with AI is a sustainable implementation. With the right structures in place, businesses can de-risk their AI activities, foster knowledge sharing across teams, and ultimately transform potential vulnerabilities into organisational strength.
