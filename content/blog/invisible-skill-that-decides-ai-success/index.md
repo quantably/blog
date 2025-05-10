@@ -1,5 +1,5 @@
 ---
-title: The Unspoken Power of Expectation Setting for AI Leaders
+title: The Invisible Skill That Decides AI Success
 date: 2025-05-10
 tags:
   - Leadership
