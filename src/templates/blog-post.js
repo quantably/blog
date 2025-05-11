@@ -93,19 +93,12 @@ export const Head = ({ data: { markdownRemark: post, site } }) => {
   const siteUrl = site.siteMetadata?.siteUrl || '';
   const imageUrl = folder ? `${siteUrl}/social-cards/${folder}.png` : undefined;
   return (
-    <>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      {imageUrl && (
-        <>
-          <meta property="og:image" content={imageUrl} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:image" content={imageUrl} />
-        </>
-      )}
-    </>
+    <Seo
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      image={imageUrl}
+      twitterCardType="summary_large_image"
+    />
   )
 }
 
