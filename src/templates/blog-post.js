@@ -10,9 +10,6 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
-  // Use the folder name for the social card preview if available
-  const folder = post.fields?.folder;
-
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -90,7 +87,9 @@ const BlogPostTemplate = ({
 
 export const Head = ({ data: { markdownRemark: post, site } }) => {
   const folder = post.fields?.folder;
-  const siteUrl = site.siteMetadata?.siteUrl || '';
+  let siteUrl = site.siteMetadata?.siteUrl || '';
+  // Remove trailing slash if present
+  if (siteUrl.endsWith('/')) siteUrl = siteUrl.slice(0, -1);
   const imageUrl = folder ? `${siteUrl}/social-cards/${folder}.png` : undefined;
   return (
     <Seo
