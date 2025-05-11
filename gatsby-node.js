@@ -6,6 +6,7 @@
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { generateCards } = require('./src/scripts/generate-social-cards')
 
 // Define templates
 const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
@@ -120,6 +121,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: sourceInstanceName,
     });
 
+    // Add the folder name as a field (directory name containing the markdown file)
+    const folder = parent && parent.dir ? path.basename(parent.dir) : null;
+    createNodeField({
+      node,
+      name: `folder`,
+      value: folder,
+    });
+
     const value = createFilePath({ node, getNode })
 
     createNodeField({
@@ -183,6 +192,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
       isDraft: Boolean
       sourceInstanceName: String
+      folder: String
     }
   `)
 }

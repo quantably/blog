@@ -10,6 +10,9 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
+  // Use the folder name for the social card preview if available
+  const folder = post.fields?.folder;
+
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -85,12 +88,24 @@ const BlogPostTemplate = ({
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = ({ data: { markdownRemark: post, site } }) => {
+  const folder = post.fields?.folder;
+  const siteUrl = site.siteMetadata?.siteUrl || '';
+  const imageUrl = folder ? `${siteUrl}/social-cards/${folder}.png` : undefined;
   return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
+    <>
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      {imageUrl && (
+        <>
+          <meta property="og:image" content={imageUrl} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image" content={imageUrl} />
+        </>
+      )}
+    </>
   )
 }
 
@@ -111,11 +126,22 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        folder
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        summary
+        featuredImage {
+          childImageSharp {
+            fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 80) {
+              src
+            }
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

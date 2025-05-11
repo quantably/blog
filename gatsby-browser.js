@@ -10,9 +10,6 @@ import "./src/style.css"
 import "prismjs/themes/prism.css"
 
 import mermaid from 'mermaid';
-// Remove React and Layout imports if only used for wrapPageElement
-// import React from 'react';
-// import Layout from './src/components/layout';
 
 // Switch back to onInitialClientRender
 export const onInitialClientRender = () => {
