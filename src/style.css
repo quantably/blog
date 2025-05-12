@@ -173,84 +173,16 @@ p {
   padding: var(--spacing-0);
 }
 
+/* Reduce indentation for lists inside Tailwind Typography's prose class */
+.prose ul,
+.prose ol {
+  padding-left: 1.25em;
+}
+
+/* Remove redundant or conflicting list styles now handled by prose */
 ul,
 ol {
-  margin-left: var(--spacing-0);
-  margin-right: var(--spacing-0);
-  padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
-  list-style-position: outside;
-  list-style-image: none;
-}
-
-/* Reduce indentation for top-level lists within main content sections */
-main section > ul,
-main section > ol {
-  /* Adjust this padding value to control indentation */
-  padding-left: 1.5rem; 
-  list-style-position: inside; /* Move bullets inside the text flow */
-}
-
-ul li,
-ol li {
-  padding-left: var(--spacing-0);
-  margin-bottom: var(--spacing-2);
-}
-
-li > p {
-  margin-bottom: var(--spacing-2);
-}
-
-li *:last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
-}
-
-blockquote {
-  color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
-  margin-right: var(--spacing-8);
-  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
-  font-style: italic;
-  margin-bottom: var(--spacing-8);
-}
-
-blockquote > :last-child {
-  margin-bottom: var(--spacing-0);
-}
-
-blockquote > ul,
-blockquote > ol {
-  list-style-position: inside;
-}
-
-table {
-  width: 100%;
-  margin-bottom: var(--spacing-8);
-  border-collapse: collapse;
-  border-spacing: 0.25rem;
-}
-
-table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
-}
-
-/* Link */
-
-a {
-  color: var(--color-primary);
-  text-decoration: none; /* Remove underline by default */
-}
-
-a:hover,
-a:focus {
-  text-decoration: none; /* Ensure no underline on hover/focus either */
+  /* Remove margin and padding resets, and list-style overrides that are not needed */
 }
 
 /* Add styles for mobile navigation */
@@ -443,3 +375,11 @@ a:focus {
 .td-title a:hover { 
   text-decoration: underline; /* Add underline on hover for clarity */
 }
+
+/* --- Tailwind Typography (prose) --- */
+/*
+  To enable beautiful, readable defaults for Markdown content, use:
+  <div className="prose"> ... </div>
+  This will style lists, headings, code, blockquotes, etc.
+  Make sure @tailwindcss/typography is installed and added to tailwind.config.js plugins.
+*/

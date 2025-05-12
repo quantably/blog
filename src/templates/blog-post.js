@@ -46,10 +46,11 @@ const BlogPostTemplate = ({
           )}
         </header>
         <section
+          className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <hr className="mt-8" />
         <footer>
           {/* Remove Bio component */}
           {/* <Bio /> */}
@@ -124,6 +125,9 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         siteUrl
+        author {
+          name
+        }
       }
     }
     markdownRemark(id: { eq: $id }) {

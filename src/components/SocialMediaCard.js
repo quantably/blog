@@ -35,6 +35,8 @@ const SocialMediaCard = ({
 
   return (
     <div className="relative w-[1200px] h-[630px] bg-gradient-to-br from-green-100 to-green-50 overflow-hidden border border-gray-300 rounded-2xl shadow-2xl">
+      {/* Subtle shadow beneath the window for depth */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-6 w-[900px] h-8 bg-black/10 rounded-full blur-md z-30 pointer-events-none" />
       {/* Window frame border */}
       <div className="absolute inset-0 border border-gray-300 rounded-2xl pointer-events-none z-40" />
 
@@ -80,8 +82,37 @@ const SocialMediaCard = ({
               <div className="flex-1 text-center">
                 <span className="text-base font-semibold text-gray-700 tracking-wide">{siteName}</span>
               </div>
-              {/* Bookmark/share icons placeholder */}
-              <div className="flex items-center space-x-3">
+              {/* Empty right side for symmetry */}
+              <div className="w-16" />
+            </div>
+            {/* URL bar with loading spinner, URL, and bookmark/share icons */}
+            <div className="h-12 flex items-center px-4 border-b border-gray-100 bg-gray-50">
+              {/* Loader with progress in green matching background */}
+              <div className="flex items-center justify-center w-8 h-8 mr-2">
+                <svg className="h-6 w-6" viewBox="0 0 24 24">
+                  {/* Background circle */}
+                  <circle cx="12" cy="12" r="10" stroke="#d1d5db" strokeWidth="4" fill="none" />
+                  {/* Progress arc in green (matching background) */}
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#bbf7d0"
+                    strokeWidth="4"
+                    fill="none"
+                    strokeDasharray={2 * Math.PI * 10}
+                    strokeDashoffset={(1 - progress / 100) * 2 * Math.PI * 10}
+                    strokeLinecap="round"
+                    style={{ transition: 'stroke-dashoffset 0.5s' }}
+                  />
+                </svg>
+              </div>
+              {/* URL display */}
+              <div className="flex-1 flex items-center justify-center">
+                <span className="text-gray-700 text-base font-mono bg-white px-4 py-1 rounded border border-gray-200 shadow-inner" style={{ minWidth: '340px', textAlign: 'center' }}>{displayUrl}</span>
+              </div>
+              {/* Bookmark/share icons */}
+              <div className="flex items-center space-x-3 ml-2">
                 <Bookmark className="w-5 h-5 text-gray-500 hover:text-teal-600 transition" />
                 <Share2 className="w-5 h-5 text-gray-500 hover:text-teal-600 transition" />
               </div>
