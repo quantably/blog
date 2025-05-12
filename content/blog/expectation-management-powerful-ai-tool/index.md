@@ -16,16 +16,16 @@ You need the right technology, talent, and infrastructure. Those are a given. Bu
 
 Setting expectations isn't a new idea, but it's especially critical in AI. Three key factors make it challenging:
 
-##### 1. The Hype Factor 
+#### 1. The Hype Factor 
 - AI projects suffer from mismatched expectations more than other tech areas
 - Media coverage creates unrealistic benchmarks
 
-##### 2. Hidden Complexity 
+#### 2. Hidden Complexity 
 - It's not always clear what AI can actually do (and what it can't)
 - 'Hidden' work behind the scenes isn't obvious to stakeholders
 - Example: Customers confused when data preparation is allocated a month
 
-##### 3. Non-linear Progress 
+#### 3. Non-linear Progress 
 - Traditional roadmaps promise features by set dates, but AI progress isn't linear
 - You might reach 60% accuracy quickly, then spend months chasing 85%
 - This affects both internal teams and external stakeholder expectations
@@ -64,22 +64,22 @@ Model maintenance is another frequent point of misalignment related to outcomes.
 
 Recognising these three layers reveals common pain points. Despite this, traditional approaches to expectation management often perpetuate the problems they attempt to solve. Below are four approaches I use that directly address these challenges.
 
-##### 1. Create dual reporting structures
+#### 1. Create dual reporting structures
 
 Dual reporting means sharing technical metrics with teams and business outcomes with leadership. Remember the executive who disengaged during F1-score discussions (Layer 3)? Same project, different languages. The key is tailoring results to the audience - what matters to one group may be irrelevant to another.
 
 ![Example: Reporting for Different Stakeholders](./reporting-table.png)
 
-##### 2. Frame expectations through cost of omission rather than the benefits of inclusion
+#### 2. Frame expectations through cost of omission rather than the benefits of inclusion
 
 When clients question the month allocated for data preparation (Layer 2). Instead of defending the timeline, flip the conversation and help explore what happens without data preparation work. Raise the question: "What's the cost of NOT doing this step?" Frame it in terms of outcomes the stakeholder is primarily concerned with - predictive accuracy, frauds detected, chatbot hallucinations. This is not about being negative, it's about transparency and clarity on the importance of certain parts of a project.
 
-##### 3. Create a failure library documenting every dead end, flawed assumption or failed experiment 
+#### 3. Create a failure library documenting every dead end, flawed assumption or failed experiment 
 
 For stakeholders who view AI iteration as failure (Layer 2), a failure library reframes setbacks as assets. When teams document what didn't work, "failure" becomes intelligence.
 This compounds as new people join. Instead of repeating dead ends, they see what's been tried. Smart teams track failures, not just wins. Document every wrong turn.
 
-##### 4. Set expectations for a mental shift, not just the deliverables
+#### 4. Set expectations for a mental shift, not just the deliverables
 
 The root of stakeholder confusion about AI (Layer 1) isn't just a lack of knowledge. The real gap is behavioural - putting knowledge into practice.
 
