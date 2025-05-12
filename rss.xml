@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 May 2025 07:51:04 GMT</lastBuildDate><item><title><![CDATA[The Invisible Skill That Decides AI Success]]></title><description><![CDATA[The most successful AI projects I've led share a common trait. It's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely]]></description><link>https://quantably.co/invisible-skill-that-decides-ai-success/</link><guid isPermaLink="false">https://quantably.co/invisible-skill-that-decides-ai-success/</guid><pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The most successful AI projects I&apos;ve led share a common trait. It&apos;s not superior technology or bigger budgets. It&apos;s a discipline that most companies overlook entirely&lt;!-- excerpt --&gt;: expectation setting.&lt;/p&gt;
-&lt;p&gt;You need the right technology, talent, and infrastructure. Those are a given. But when AI projects fail, it&apos;s rarely due to technical shortcomings. It&apos;s expectation setting that makes or breaks them.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 May 2025 08:41:29 GMT</lastBuildDate><item><title><![CDATA[Why Expectation Management Is Your Most Powerful AI Tool]]></title><description><![CDATA[The most successful AI projects I've led share a common trait. It's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely]]></description><link>https://quantably.co/expectation-management-powerful-ai-tool/</link><guid isPermaLink="false">https://quantably.co/expectation-management-powerful-ai-tool/</guid><pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The most successful AI projects I&apos;ve led share a common trait. It&apos;s not superior technology or bigger budgets. It&apos;s a discipline that most companies overlook entirely&lt;!-- excerpt --&gt;: expectation setting.&lt;/p&gt;
+&lt;p&gt;By the end of this post, you&apos;ll understand how to master the three critical layers of AI expectation setting and implement four practical approaches that will dramatically improve your project outcomes.&lt;/p&gt;
 &lt;h2&gt;Why AI Demands a New Approach&lt;/h2&gt;
+&lt;p&gt;You need the right technology, talent, and infrastructure. Those are a given. But when AI projects fail, it&apos;s rarely due to technical shortcomings. It&apos;s expectation setting that makes or breaks them.&lt;/p&gt;
 &lt;p&gt;Setting expectations isn&apos;t a new idea, but it&apos;s especially critical in AI. Three key factors make it challenging:&lt;/p&gt;
-&lt;h5&gt;1. The Hype Factor&lt;/h5&gt;
+&lt;h4&gt;1. The Hype Factor&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;AI projects suffer from mismatched expectations more than other tech areas&lt;/li&gt;
 &lt;li&gt;Media coverage creates unrealistic benchmarks&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;2. Hidden Complexity&lt;/h5&gt;
+&lt;h4&gt;2. Hidden Complexity&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;It&apos;s not always clear what AI can actually do (and what it can&apos;t)&lt;/li&gt;
 &lt;li&gt;&apos;Hidden&apos; work behind the scenes isn&apos;t obvious to stakeholders&lt;/li&gt;
 &lt;li&gt;Example: Customers confused when data preparation is allocated a month&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;3. Non-linear Progress&lt;/h5&gt;
+&lt;h4&gt;3. Non-linear Progress&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Traditional roadmaps promise features by set dates, but AI progress isn&apos;t linear&lt;/li&gt;
 &lt;li&gt;You might reach 60% accuracy quickly, then spend months chasing 85%&lt;/li&gt;
@@ -73,7 +74,7 @@
 &lt;p&gt;Model maintenance is another frequent point of misalignment related to outcomes. AI systems are rarely &quot;fire and forget.&quot; Data distributions drift, requiring maintenance in the form of monitoring and periodic model retraining or refreshing the data.&lt;/p&gt;
 &lt;h3&gt;Revolutionary Approaches for the AI Era&lt;/h3&gt;
 &lt;p&gt;Recognising these three layers reveals common pain points. Despite this, traditional approaches to expectation management often perpetuate the problems they attempt to solve. Below are four approaches I use that directly address these challenges.&lt;/p&gt;
-&lt;h5&gt;1. Create dual reporting structures&lt;/h5&gt;
+&lt;h4&gt;1. Create dual reporting structures&lt;/h4&gt;
 &lt;p&gt;Dual reporting means sharing technical metrics with teams and business outcomes with leadership. Remember the executive who disengaged during F1-score discussions (Layer 3)? Same project, different languages. The key is tailoring results to the audience - what matters to one group may be irrelevant to another.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -108,12 +109,12 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h5&gt;2. Frame expectations through cost of omission rather than the benefits of inclusion&lt;/h5&gt;
+&lt;h4&gt;2. Frame expectations through cost of omission rather than the benefits of inclusion&lt;/h4&gt;
 &lt;p&gt;When clients question the month allocated for data preparation (Layer 2). Instead of defending the timeline, flip the conversation and help explore what happens without data preparation work. Raise the question: &quot;What&apos;s the cost of NOT doing this step?&quot; Frame it in terms of outcomes the stakeholder is primarily concerned with - predictive accuracy, frauds detected, chatbot hallucinations. This is not about being negative, it&apos;s about transparency and clarity on the importance of certain parts of a project.&lt;/p&gt;
-&lt;h5&gt;3. Create a failure library documenting every dead end, flawed assumption or failed experiment&lt;/h5&gt;
+&lt;h4&gt;3. Create a failure library documenting every dead end, flawed assumption or failed experiment&lt;/h4&gt;
 &lt;p&gt;For stakeholders who view AI iteration as failure (Layer 2), a failure library reframes setbacks as assets. When teams document what didn&apos;t work, &quot;failure&quot; becomes intelligence.
 This compounds as new people join. Instead of repeating dead ends, they see what&apos;s been tried. Smart teams track failures, not just wins. Document every wrong turn.&lt;/p&gt;
-&lt;h5&gt;4. Set expectations for a mental shift, not just the deliverables&lt;/h5&gt;
+&lt;h4&gt;4. Set expectations for a mental shift, not just the deliverables&lt;/h4&gt;
 &lt;p&gt;The root of stakeholder confusion about AI (Layer 1) isn&apos;t just a lack of knowledge. The real gap is behavioural - putting knowledge into practice.&lt;/p&gt;
 &lt;p&gt;It&apos;s like running a marathon. You can read about running mechanics, buy carbon-plated shoes, and purchase a training plan. That part&apos;s easy. But it doesn&apos;t mean you&apos;ll lace up in the rain and run 10 miles in the depth of winter.&lt;/p&gt;
 &lt;p&gt;AI adoption is the same.&lt;/p&gt;
