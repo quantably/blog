@@ -4,6 +4,7 @@ date: 2025-05-10
 tags:
   - Leadership
 summary: "The most successful AI projects I've led share a common trait. It's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely"
+headerImage: ./local-maxima.png
 ---
 
 The most successful AI projects I've led share a common trait and it's not superior technology or bigger budgets. It's a discipline that most companies overlook entirely<!-- excerpt -->: expectation setting.

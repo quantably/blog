@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -17,6 +18,14 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
+        {/* Optional header image */}
+        {post.frontmatter.headerImage && post.frontmatter.headerImage.childImageSharp && (
+          <GatsbyImage
+            image={getImage(post.frontmatter.headerImage)}
+            alt={post.frontmatter.title}
+            style={{ maxWidth: '500px', margin: '0 auto 2rem', borderRadius: '0.5rem', display: 'block' }}
+          />
+        )}
         <header>
           {/* Move Back Button Here (Above Title/Date) */}
           <div style={{ marginBottom: '1rem' }}> {/* Adjust margin as needed */}
@@ -143,6 +152,11 @@ export const pageQuery = graphql`
         description
         tags
         summary
+        headerImage {
+          childImageSharp {
+            gatsbyImageData(width: 500, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
