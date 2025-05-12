@@ -161,7 +161,7 @@ module.exports = {
     description: `Living and working in London, Peter Wooldridge explores topics in AI.`,
     siteUrl: `https://quantably.co`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `pwwooldridge`,
     },
   },
   // Use the conditionally built plugins array

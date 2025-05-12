@@ -37,9 +37,3 @@ export const onRouteUpdate = () => {
     console.error("[gatsby-browser.js] Error rendering Mermaid on route update:", error);
   }
 };
-
-// Remove wrapPageElement export
-// export const wrapPageElement = ({ element, props }) => {
-//   console.log(`[gatsby-browser.js] Wrapping element for path: ${props.location.pathname}`);
-//   return <Layout {...props}>{element}</Layout>;
-// };
