@@ -91,10 +91,10 @@ To do this effectively, use concrete language and analogies that connect AI to b
 
 ## Conclusion
 
-Expectation setting isn't just a project management checkbox - it's often the difference between AI that delivers and AI that doesn't. The best leaders don't just manage timelines; they manage mindsets.
+Expectation setting is more than a project management checkbox; it’s often the difference between AI that delivers and AI that doesn’t. The best leaders manage mindsets as well as timelines.
 
-The gap in AI projects isn't just knowledge; it's behavioural change. It's like marathon training - you don't improve linearly each day. Some days feel like setbacks, but they're actually essential for adaptation. The failed experiments, the plateaus in model performance - these aren't signs of project failure but necessary parts of the AI development process.
+In AI projects, the real challenge isn’t simply a lack of knowledge, but the need for behavioral change. Think of it like marathon training: progress isn’t linear, and setbacks are part of the journey. Failed experiments and plateaus in model performance aren’t signs of failure - they’re essential steps in development.
 
-Start by mapping out the three layers: technical reality, process, and outcomes. Spot where expectations are most misaligned. Use dual reporting, frame the cost of skipping steps, document failures, and reset project paradigms before misconceptions take root.
+To improve outcomes, start by mapping out the three layers: technical reality, process, and outcomes. Identify where expectations are most misaligned. Use dual reporting, frame the cost of skipping steps, document failures, and reset project paradigms before misconceptions take root.
 
-You don't need to be perfect. You just need to be clear, honest, and willing to adapt. In AI, progress comes from learning and doubling down on what works.
+Perfection isn’t required. What matters is being clear, honest, and adaptable. In AI, progress comes from learning and doubling down on what works.
