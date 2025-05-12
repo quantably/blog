@@ -76,7 +76,7 @@ When clients question the month allocated for data preparation (Layer 2). Instea
 
 #### 3. Create a failure library documenting every dead end, flawed assumption or failed experiment 
 
-For stakeholders who view AI iteration as failure (Layer 2), a failure library reframes setbacks as assets. When teams document what didn't work, "failure" becomes intelligence.
+For stakeholders who view AI iteration as a lack of progress (Layer 2), a failure library reframes setbacks as assets. When teams document what didn't work, "failure" becomes intelligence.
 This compounds as new people join. Instead of repeating dead ends, they see what's been tried. Smart teams track failures, not just wins. Document every wrong turn.
 
 #### 4. Set expectations for a mental shift, not just the deliverables

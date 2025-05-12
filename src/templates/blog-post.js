@@ -35,7 +35,7 @@ const BlogPostTemplate = ({
               Tags:{` `}
               {post.frontmatter.tags.map((tag, index) => (
                 <React.Fragment key={tag}>
-                  <Link to={`/tags/${tag}/`} style={{ marginRight: '0.5rem' }}>
+                  <Link className="teal-link" to={`/tags/${tag}/`} style={{ marginRight: '0.5rem' }}>
                     {tag}
                   </Link>
                   {/* Add comma separator except for the last tag - adjust if needed */}
@@ -68,14 +68,14 @@ const BlogPostTemplate = ({
         >
           <li>
             {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
+              <Link className="teal-link" to={`/blog${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
+              <Link className="teal-link" to={`/blog${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}

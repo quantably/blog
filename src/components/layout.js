@@ -19,10 +19,10 @@ const Layout = ({ location, title, children }) => {
         <div>{header}</div>
         
         <nav className="desktop-nav">
-          <Link to="/blog" style={{ marginRight: '1rem' }}>Blog</Link>
-          <Link to="/projects" style={{ marginRight: '1rem' }}>Projects</Link>
-          <Link to="/media" style={{ marginRight: '1rem' }}>Media</Link>
-          <Link to="/about" >About</Link>
+          <Link className="teal-link" to="/blog" style={{ marginRight: '1rem' }}>Blog</Link>
+          <Link className="teal-link" to="/projects" style={{ marginRight: '1rem' }}>Projects</Link>
+          <Link className="teal-link" to="/media" style={{ marginRight: '1rem' }}>Media</Link>
+          <Link className="teal-link" to="/about" >About</Link>
         </nav>
 
         <button 
@@ -46,10 +46,10 @@ const Layout = ({ location, title, children }) => {
       </header>
 
       <nav className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
-         <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
-         <Link to="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
-         <Link to="/media" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
-         <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+         <Link className="teal-link" to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+         <Link className="teal-link" to="/projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+         <Link className="teal-link" to="/media" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
+         <Link className="teal-link" to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
       </nav>
 
       <main>{children}</main>

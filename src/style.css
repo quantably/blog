@@ -383,3 +383,11 @@ ol {
   This will style lists, headings, code, blockquotes, etc.
   Make sure @tailwindcss/typography is installed and added to tailwind.config.js plugins.
 */
+
+.teal-link, .teal-link:visited {
+  color: var(--color-primary) !important;
+  text-decoration: none;
+}
+.teal-link:hover, .teal-link:focus {
+  text-decoration: underline;
+}
