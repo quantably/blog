@@ -143,13 +143,6 @@ export const pageQuery = graphql`
         description
         tags
         summary
-        featuredImage {
-          childImageSharp {
-            fixed(width: 1200, height: 630, cropFocus: CENTER, quality: 80) {
-              src
-            }
-          }
-        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
