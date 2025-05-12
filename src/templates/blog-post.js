@@ -91,13 +91,24 @@ export const Head = ({ data: { markdownRemark: post, site } }) => {
   // Remove trailing slash if present
   if (siteUrl.endsWith('/')) siteUrl = siteUrl.slice(0, -1);
   const imageUrl = folder ? `${siteUrl}/social-cards/${folder}.png` : undefined;
+  const author = site.siteMetadata?.author?.name;
+  // Use the raw date from frontmatter for ISO string
+  const publishedTime = post.frontmatter?.date
+    ? new Date(post.frontmatter.date).toISOString()
+    : undefined;
   return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-      image={imageUrl}
-      twitterCardType="summary_large_image"
-    />
+    <>
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+        image={imageUrl}
+        twitterCardType="summary_large_image"
+      />
+      <meta name="author" content={author} />
+      {publishedTime && (
+        <meta property="article:published_time" content={publishedTime} />
+      )}
+    </>
   )
 }
 
