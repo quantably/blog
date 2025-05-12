@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpeter_wooldridge_blog=self.webpackChunkpeter_wooldridge_blog||[]).push([[2024],{9643:function(e,r,t){t.d(r,{createArchitectureServices:function(){return c.S}});var c=t(8815);t(4846)}}]);
