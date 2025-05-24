@@ -9,7 +9,7 @@ tags:
 
 > This data could be absolutely transformative for our business - but we can't risk putting it into AI tools.
 
-An agency owner recently told me this. The company is more profitable than ever but success is pushing them towards burnout. AI offers a remedy to transform operational efficiency, but they're stifled by the fear of security breaches.
+An agency owner recently told me this. <!-- excerpt -->The company is more profitable than ever but success is pushing them towards burnout. AI offers a remedy to transform operational efficiency, but they're stifled by the fear of security breaches.
 
 Competitors embrace AI whilst they're stuck WhatsApping employees on holiday. Clients need urgent information. Years of client notes sit locked away - too valuable to lose, too risky to use.
 
