@@ -5,26 +5,23 @@ tags:
   - AI
   - Cloud
   - Privacy
-draft: true
 ---
 
 > This data could be absolutely transformative for our business - but we can't risk putting it into AI tools.
 
-An agency owner recently told me this. <!-- excerpt -->The company is more profitable than ever but success is pushing them towards burnout. AI offers a remedy to transform operational efficiency, but they're stifled by the fear of security breaches.
+This sentiment is common. Many businesses, especially SMEs, recognise AI's potential to transform operational efficiency but are stifled by the fear of security breaches and data exposure. The risk feels too high when client trust and sensitive information are on the line.
 
-Competitors embrace AI whilst they're stuck WhatsApping employees on holiday. Clients need urgent information. Years of client notes sit locked away - too valuable to lose, too risky to use.
+When relationships drive your business, the stakes matter. One data leak could cost everything. Only 56% of consumers believe companies can ensure data privacy when implementing AI tools.
 
-When relationships drive your business, the stakes matter. One data leak could cost everything. Only 56% of consumers believe companies can ensure data privacy when implementing AI tools. 
-
-They're right to be skeptical.
+Such skepticism is understandable.
 
 Conventional wisdom says: "Sensitive data = Local deployment." But is it really that binary?
 
-In this post, you'll learn the five distinct deployment paths available - each with different trade-offs, requirements, and levels of control. Knowing these options reframes the question from "should we use AI?" to "which approach actually fits our situation?"
+In this post, you'll learn the six distinct deployment paths available - each with different trade-offs, requirements, and levels of control. Knowing these options reframes the question from "should we use AI?" to "which approach actually fits our situation?"
 
 ### 🛠️ Deployment Options
 
-Each business balances privacy and productivity differently. The right choice is about alignment, not industry noise. Here's a clear look at your options.
+Privacy and productivity are a constant trade-off. The right deployment strategy is about aligning to your specific needs. Here are the core choices.
 
 <details>
 <summary>💻 Option 1: Lightweight Local (The Quick Fix)</summary>
@@ -85,7 +82,7 @@ Each business balances privacy and productivity differently. The right choice is
 
 **What:** Run AI models on dedicated cloud resources that you control and configure, not shared/public SaaS.
 
-**Example:** Deploy LLMs like Llama 3 using vLLM on dedicated AWS EC2 instances with Inferentia/Trainium chips for scalable, managed inference. <a href="https://aws.amazon.com/blogs/machine-learning/serving-llms-using-vllm-and-amazon-ec2-instances-with-aws-ai-chips/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">AWS deployment guide</a>
+**Example:** Deploy LLMs like Llama 3 using vLLM on dedicated AWS EC2 instances with Inferentia/Trainium chips for scalable, managed inference. Example <a href="https://aws.amazon.com/blogs/machine-learning/serving-llms-using-vllm-and-amazon-ec2-instances-with-aws-ai-chips/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">AWS deployment guide</a>
 
 **When?** You need control and scalability, but want to avoid on-premise hardware and leverage cloud flexibility.
 
@@ -100,7 +97,7 @@ Each business balances privacy and productivity differently. The right choice is
 - Lower upfront cost than on-premise, but ongoing cloud spend
 - Still requires technical expertise for secure configuration and management
 - Data remains under your control, but is hosted offsite
-- Easier to scale up or down as needs change
+- Easier to scale up or down as resource needs change
 - Vendor lock-in and cloud compliance still need to be managed
 
 </div>
@@ -120,11 +117,14 @@ EU-hosted providers offering data residency compliance and GDPR-first solutions.
 - Ongoing: $260-2,600/month (depending on usage and provider)
 - Time investment: 2-4 weeks setup and compliance verification
 
-**Difficulty:** Medium complexity (1-2 months) + ongoing technical maintenance
+**Difficulty:** Medium complexity (1-2 months)
 
 **Considerations**
-- Best for when regulatory requirements are your primary concern
-- Do you need data residency guarantees to satisfy clients or auditors
+- Best for when regulatory requirements are your primary concern.
+- Ongoing vendor management and contract review required
+- User access controls and data handling policies within the cloud service still need active management.
+- Monitoring API usage, costs, and any provider-side changes is necessary.
+- Regularly verify that the service continues to meet your compliance obligations.
 
 </div>
 </details>
@@ -183,7 +183,7 @@ EU-hosted providers offering data residency compliance and GDPR-first solutions.
 </details>
 
 ### Combining Approaches
-In reality most SMEs don't pick one path. They use different approaches for different data types. Strategic planning happens on local models. Customer analysis runs through sanitised cloud. Content creation uses pure cloud APIs where speed matters more than sovereignty.
+In reality companies often don't pick one path. They use different approaches for different data types. Strategic planning happens on local models. Customer analysis runs through sanitised cloud. Content creation uses pure cloud APIs where speed matters more than sovereignty.
 
 Different risks, different tools. Start conservative with sensitive data, experiment freely with operational tasks. The framework scales with your comfort and capability.
 
