@@ -110,11 +110,11 @@ EU-hosted providers offering data residency compliance and GDPR-first solutions.
 
 **Examples:**
 - <a href="https://aleph-alpha.com/" target="_blank" rel="noopener noreferrer">Aleph Alpha</a>: A sovereign, transparent EU-based provider focused on data protection, explainability, and compliance for critical industries and the public sector.
-- <a href="https://openai.com/index/introducing-data-residency-in-europe/" target="_blank" rel="noopener noreferrer">OpenAI European Data Residency</a>: Mainstream LLMs with new options for processing and storing data exclusively within the EU, helping address GDPR and client data residency requirements.
+- <a href="https://openai.com/index/introducing-data-residency-in-europe/" target="_blank" rel="noopener noreferrer">OpenAI European Data Residency</a>: Mainstream LLMs with new options for processing and storing data exclusively within the EU, helping address GDPR and client data residency requirements. Note: This is typically part of OpenAI's Enterprise plan, and specific pricing requires contacting their sales team.
 
 **Cost estimates:**
-- Setup: $0-2,600 (integration and compliance review)
-- Ongoing: $260-2,600/month (depending on usage and provider)
+- Setup: $0-2,600 (integration and compliance review for general EU-compliant cloud services)
+- Ongoing: $260-2,600/month (depending on usage and provider; OpenAI Enterprise pricing will vary and requires direct inquiry)
 - Time investment: 2-4 weeks setup and compliance verification
 
 **Difficulty:** Medium complexity (1-2 months)
