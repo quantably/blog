@@ -3,6 +3,9 @@ title: "The AI Empiricist: Why Experimentation Trumps Authority"
 date: "2025-06-11"
 draft: false
 tags:
+  - AI
+  - Business Strategy
+  - Projects
 ---
 
 A friend is helping run an AI course. Lately, she's been inundated with what essentially boils down to the same question:  
