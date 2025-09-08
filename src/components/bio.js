@@ -43,9 +43,17 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
-          Hi, I'm Peter. I'm an AI leader with over 15 years of experience, primarily building AI products at companies like Monolith, Elsevier, Experian, and IBM. This site is where I share practical insights: real-world strategies for leading AI teams, navigating project challenges, and using modern tools effectively.
-        </p>
+        <div>
+          <p>
+            15 years shipping AI. From IBM to startups. Led teams of 20+, built solo too. Now I turn AI potential into products people use.
+          </p>
+          <p>
+            <strong>How I work:</strong> Build fast. Test with users. Iterate on data. No drawn-out discovery. No junior armies. Just senior execution.
+          </p>
+          <p>
+            <strong>Recent builds:</strong> Predictive analytics for FinOps. Conversational AI for career coaching. Both live in under 6 weeks.
+          </p>
+        </div>
       )}
     </div>
   )
