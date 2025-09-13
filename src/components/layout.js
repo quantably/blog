@@ -18,11 +18,11 @@ const Layout = ({ location, title, children }) => {
       <div className="max-w-4xl mx-auto px-6 py-2">
       <header className="flex justify-between items-center mb-4 py-2">
         <div className="font-bold text-2xl md:text-3xl text-white">{header}</div>
-        
+
         <nav className="hidden md:flex items-center space-x-8">
           <Link className="text-gray-300 hover:text-white font-medium transition-colors" to="/blog">Blog</Link>
           <Link className="text-gray-300 hover:text-white font-medium transition-colors" to="/media">Media</Link>
-          <a 
+          <a
             href="https://cal.com/quantably/30min"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,8 +32,8 @@ const Layout = ({ location, title, children }) => {
           </a>
         </nav>
 
-        <button 
-          className="md:hidden p-2 text-gray-300 hover:text-white transition-colors" 
+        <button
+          className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={isMobileMenuOpen}
@@ -54,7 +54,7 @@ const Layout = ({ location, title, children }) => {
         <div className="flex flex-col space-y-2">
           <Link className="text-gray-300 hover:text-white hover:bg-slate-700 font-medium py-3 px-4 rounded-lg transition-colors" to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
           <Link className="text-gray-300 hover:text-white hover:bg-slate-700 font-medium py-3 px-4 rounded-lg transition-colors" to="/media" onClick={() => setIsMobileMenuOpen(false)}>Media</Link>
-          <a 
+          <a
             href="https://cal.com/quantably/30min"
             target="_blank"
             rel="noopener noreferrer"
