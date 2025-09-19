@@ -65,7 +65,7 @@ const HomePage = ({ data, location }) => {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Most companies are drowning in AI information and this overwhelm leads to analysis paralysis. What separates the leaders from the followers isn't their AI budget or technical expertise, but their ability to run targeted experiments that validate real business impact.
+                Most companies are drowning in AI information and this overwhelm often leads to analysis paralysis. What separates the leaders from the followers isn't their AI budget or technical expertise, but their ability to run targeted experiments that validate real business impact.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
