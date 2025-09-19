@@ -57,23 +57,31 @@ const HomePage = ({ data, location }) => {
 
             <div className="max-w-3xl mx-auto text-left space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                <strong>Most companies believe that AI has the potential to transform their business</strong>. And the good news is they're right. But many simply don't know how. It's no surprise given how fast the field is moving.
+                Reading about AI these days, you might feel both excited and overwhelmed. Everyone's talking about 'the AI transformation', but few are showing the actual path.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                The key is being able to sort the <strong>signal</strong> from the <strong>noise</strong>. <strong>Noise</strong> here refers to the background chatter of SaaS products, LinkedIn posts, workflows, research papers that create overwhelm and confusion as to what is actually possible to do with AI. The <strong>signal</strong> is the handful of tools and techniques that can actually solve your most pressing business problems.
+                The issue isn't whether AI can deliver value - it clearly can. The real issue is identifying which specific applications will drive results for your particular business. And that means cutting through the noise.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Once you know <strong>what</strong> to focus on, the key is <strong>rapid experimentation</strong>. This is what differentiates companies that succeed with AI from those that don't. Instead of spending months planning the perfect solution, you run a series of small tests that quickly validate your core hypothesis. You build, test, learn, and adapt based on real user feedback.
+                Most companies are drowning in AI information and this overwhelm leads to analysis paralysis. What separates the leaders from the followers isn't their AI budget or technical expertise, but their ability to run targeted experiments that validate real business impact.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                This approach recently enabled one client I worked with to <strong>scale their coaching platform beyond capacity constraints in 6 weeks</strong> and another FinOps company to <strong>validate a new competitive offering in the market in the same time frame</strong>.
+                The companies making headway share one crucial approach: rapid experimentation. Instead of perfect planning, they build, measure, learn, and adapt using real feedback. This methodology recently enabled one client I worked with to scale their coaching platform beyond capacity constraints in just 6 weeks, and another FinOps company to validate a completely new market offering in the same timeframe.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Whether you need help identifying the right AI opportunities or building your first working prototype, let's talk.
+                These results aren't outliers - they're what's possible when you focus on the right AI applications for your specific challenges.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                The path forward isn't about more AI knowledge - it's about focused action on the right problems.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                If you're navigating these challenges and want to discuss specific approaches, let's talk.
               </p>
 
               <div className="text-center mt-8">
