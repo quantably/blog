@@ -65,11 +65,7 @@ const HomePage = ({ data, location }) => {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Most companies are drowning in AI information and this overwhelm often leads to analysis paralysis. What separates the leaders from the followers isn't their AI budget or technical expertise, but their ability to run targeted experiments that validate real business impact.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The companies making headway share one crucial approach: rapid experimentation. Instead of perfect planning, they build, measure, learn, and adapt using real feedback. This methodology recently enabled one client I worked with to scale their coaching platform beyond capacity constraints in just 6 weeks, and helped another company validate a completely new AI-driven market offering in the same timeframe.
+                Most companies are drowning in AI information and this overwhelm often leads to analysis paralysis. What separates the leaders from the followers isn't their AI budget or technical expertise, but their approach: rapid experimentation. Instead of perfect planning, they build, measure, learn, and adapt using real feedback. This methodology recently enabled one client I worked with to scale their coaching platform beyond capacity constraints in just 6 weeks, and helped another company validate a completely new AI-driven market offering in the same timeframe.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
