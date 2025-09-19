@@ -37,13 +37,13 @@ const HomePage = ({ data, location }) => {
             I help companies reimagine their business with AI-native products and ship them fast.
             Technical depth meets product thinking.
           </p>
-          <a 
+          <a
             href="https://cal.com/quantably/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-lg px-8 py-4 rounded-lg transition-colors shadow-sm hover:shadow-md"
           >
-            Schedule a Free Consultation
+            Let's talk AI
           </a>
         </div>
       </section>
@@ -401,11 +401,7 @@ const HomePage = ({ data, location }) => {
 
             <div className="max-w-3xl mx-auto text-left space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I've spent 15 years in tech across IBM, Elsevier, Experian, and the startup ecosystem, where I scaled a data science team from 3 to over 25 people. Working both as an individual contributor and leading teams taught me valuable lessons about what actually drives success. After several long stints at companies, I realised I wanted to make an impact across more businesses. Going independent was the natural next step.
-              </p>
-
-              <p className="text-lg text-gray-300 leading-relaxed">
-                When I'm not working with clients, there's a good chance I'll be out running somewhere. Something I've been doing for 16 years. Running teaches you about showing up consistently, pushing through difficult moments, and the rewards that come from tackling hard challenges one step at a time. These lessons translate directly to how I approach AI projects: build foundations, stay consistent, and focus on what actually moves the needle.
+                I've spent 15 years in tech across IBM, Elsevier, Experian, and the startup ecosystem, where I scaled teams from 3 to 20+ people across data science, ML engineering, software development, and DevOps. My experience spans the full AI lifecycle - from research and machine learning to engineering, infrastructure, and forward-deployed customer work. This gives me a unique perspective on not just prototyping solutions but getting them to market and scaling them. After several long stints at companies, I realised I wanted to make an impact across more businesses. Going independent was the natural next step.
               </p>
 
               <p className="text-lg text-gray-300 leading-relaxed">
