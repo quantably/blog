@@ -69,11 +69,7 @@ const HomePage = ({ data, location }) => {
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                These results aren't outliers - they're what's possible when you focus on the right AI applications for your specific challenges.
-              </p>
-
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The path forward isn't about more AI knowledge - it's about focused action on the right problems.
+                These results aren't outliers - they're what's possible when you focus on the right AI applications for your specific challenges and take action rather than seeking more AI knowledge.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
