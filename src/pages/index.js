@@ -142,6 +142,24 @@ const HomePage = ({ data, location }) => {
                 </div>
               </div>
             </div>
+
+            {/* Matt's testimonial */}
+            <div className="bg-white/10 backdrop-blur-sm shadow-2xl shadow-black/20 rounded-2xl p-8 ring-1 ring-white/10">
+              <div className="flex items-start mb-6">
+                <svg className="w-8 h-8 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                </svg>
+                <div>
+                  <p className="text-lg text-gray-100 mb-4 leading-relaxed">
+                    "Peter is a terrific collaborator who helped us quickly bring our genAI ideas to life, meeting clear audience needs. He combines vast expertise with hands-on ability. Patient, pragmatic and adaptable, Peter effectively communicates choices, challenges and risks of different approaches. A brilliant partner for exploring genAI's potential in practical, valuable ways."
+                  </p>
+                  <div>
+                    <p className="font-semibold text-white">Matt Walton</p>
+                    <p className="text-gray-300 text-sm">Fractional Product Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
