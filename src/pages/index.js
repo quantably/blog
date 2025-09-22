@@ -100,62 +100,63 @@ const HomePage = ({ data, location }) => {
           <div className="absolute top-1/2 right-1/4 w-48 h-48 rounded-full opacity-10 blur-3xl" style={{ backgroundColor: '#21D2F9' }}></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
+        <div className="relative z-10">
+          <div className="text-center mb-16 max-w-4xl mx-auto px-6">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">What People Say</h2>
             <p className="text-xl text-gray-300">Real results from real partnerships</p>
           </div>
-          
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+
+          {/* Testimonials Container - Responsive */}
+          <div className="flex flex-col md:flex-row gap-6 justify-center px-6 md:px-12 max-w-7xl mx-auto">
             {/* Richard's testimonial */}
-            <div className="bg-white/10 backdrop-blur-sm shadow-2xl shadow-black/20 rounded-2xl p-8 ring-1 ring-white/10">
-              <div className="flex items-start mb-6">
-                <svg className="w-8 h-8 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white/10 backdrop-blur-sm shadow-xl shadow-black/20 rounded-2xl p-6 ring-1 ring-white/10 max-w-md flex-1 transition-all duration-300 hover:bg-white/15 hover:shadow-2xl hover:scale-[1.02] flex flex-col h-full">
+              <div className="flex items-start flex-1">
+                <svg className="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                 </svg>
-                <div>
-                  <p className="text-lg text-gray-100 mb-4 leading-relaxed">
+                <div className="flex flex-col h-full">
+                  <p className="text-base text-gray-100 mb-4 leading-relaxed flex-1">
                     "What makes Peter unique is how he applies lean startup principles to AI. Build fast, test with users, iterate on feedback - not months of theoretical planning. That methodology is what turns AI experiments into valuable products."
                   </p>
-                  <div>
+                  <div className="mt-auto">
                     <p className="font-semibold text-white">Richard Ahlfeld</p>
-                    <p className="text-gray-300 text-sm">CEO & Founder, Monolith</p>
+                    <p className="text-gray-400 text-sm">CEO & Founder, Monolith</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Andy's testimonial */}
-            <div className="bg-white/10 backdrop-blur-sm shadow-2xl shadow-black/20 rounded-2xl p-8 ring-1 ring-white/10">
-              <div className="flex items-start mb-6">
-                <svg className="w-8 h-8 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white/10 backdrop-blur-sm shadow-xl shadow-black/20 rounded-2xl p-6 ring-1 ring-white/10 max-w-md flex-1 transition-all duration-300 hover:bg-white/15 hover:shadow-2xl hover:scale-[1.02] flex flex-col h-full">
+              <div className="flex items-start flex-1">
+                <svg className="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                 </svg>
-                <div>
-                  <p className="text-lg text-gray-100 mb-4 leading-relaxed">
-                    "Peter works hard to ensure he understands the context of the work he is doing - in our case, building a key component of a new product. He's capable, conscientious, and collaborative, which is why we continue to work with him. He's proactive, delivers great results, and manages to translate the complex work he is doing into language even I can understand."
+                <div className="flex flex-col h-full">
+                  <p className="text-base text-gray-100 mb-4 leading-relaxed flex-1">
+                    "Peter works hard to ensure he understands the context of the work he is doing - in our case, building a key component of a new product. He's capable, conscientious, and collaborative, which is why we continue to work with him. He's proactive and delivers great results."
                   </p>
-                  <div>
+                  <div className="mt-auto">
                     <p className="font-semibold text-white">Andy Watson</p>
-                    <p className="text-gray-300 text-sm">Chief Product Officer, Strategic Blue</p>
+                    <p className="text-gray-400 text-sm">Chief Product Officer, Strategic Blue</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Matt's testimonial */}
-            <div className="bg-white/10 backdrop-blur-sm shadow-2xl shadow-black/20 rounded-2xl p-8 ring-1 ring-white/10">
-              <div className="flex items-start mb-6">
-                <svg className="w-8 h-8 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white/10 backdrop-blur-sm shadow-xl shadow-black/20 rounded-2xl p-6 ring-1 ring-white/10 max-w-md flex-1 transition-all duration-300 hover:bg-white/15 hover:shadow-2xl hover:scale-[1.02] flex flex-col h-full">
+              <div className="flex items-start flex-1">
+                <svg className="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                 </svg>
-                <div>
-                  <p className="text-lg text-gray-100 mb-4 leading-relaxed">
-                    "Peter is a terrific collaborator who helped us quickly bring our genAI ideas to life, meeting clear audience needs. He combines vast expertise with hands-on ability. Patient, pragmatic and adaptable, Peter effectively communicates choices, challenges and risks of different approaches. A brilliant partner for exploring genAI's potential in practical, valuable ways."
+                <div className="flex flex-col h-full">
+                  <p className="text-base text-gray-100 mb-4 leading-relaxed flex-1">
+                    "Peter is a terrific collaborator who helped us quickly bring our genAI ideas to life, meeting clear audience needs. Patient, pragmatic and adaptable, he effectively communicates choices and challenges of different approaches."
                   </p>
-                  <div>
+                  <div className="mt-auto">
                     <p className="font-semibold text-white">Matt Walton</p>
-                    <p className="text-gray-300 text-sm">Fractional Product Leader</p>
+                    <p className="text-gray-400 text-sm">Fractional Product Leader</p>
                   </div>
                 </div>
               </div>
