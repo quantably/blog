@@ -8,9 +8,9 @@ tags:
 slug: "/claude-code-productivity-stack"
 ---
 
-Last week I shipped four features and wrote almost no code. I reviewed a PR from my phone on a train. <!-- excerpt -->
+I used to sit at my laptop watching Claude Code work. Now I set tasks running and check in when needed. <!-- excerpt -->
 
-If you're babysitting every Claude Code session from your laptop, you're missing the point.
+If you're still babysitting every session, this post is for you.
 
 ## The Shift
 
