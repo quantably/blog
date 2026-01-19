@@ -1,5 +1,5 @@
 ---
-title: "From Maker to Orchestrator: My Claude Code Productivity Stack"
+title: "My Claude Code Productivity Stack"
 date: 2026-01-19
 tags:
   - AI
