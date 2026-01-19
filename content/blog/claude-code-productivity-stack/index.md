@@ -8,20 +8,22 @@ tags:
 slug: "/claude-code-productivity-stack"
 ---
 
-The landscape of software engineering is changing fast; makers are shifting to orchestrators. I've been rethinking my development process to support this shift. <!-- excerpt -->
+Last week I shipped four features and wrote almost no code. I reviewed a PR from my phone on a train. <!-- excerpt -->
+
+If you're babysitting every Claude Code session from your laptop, you're missing the point.
 
 ## The Shift
 
-Over the last six months, coding agents have become dramatically more capable. Claude Code (my tool of choice) can now plan, execute, and iterate on complex tasks until objectives are met. It'll tirelessly work through documentation and tests that would bore any human. Most importantly, it can work for extended periods without supervision - given clear direction.
+Coding agents got good. Claude Code can plan, execute, and iterate until objectives are met. It works for hours without supervision if you give it clear direction.
 
-This changes what my job looks like. I spend less time writing code and more time:
+My job now:
 
-- Defining clear tasks with success criteria
-- Spinning up agents and pointing them at problems
-- Reviewing and merging their work
-- Handling the parts that need human judgement
+- Define tasks with success criteria
+- Spin up agents and point them at problems
+- Review and merge their work
+- Handle the parts that need human judgement
 
-So how do I organise my workflow around this?
+Here's how I've set things up.
 
 
 ## The Framework
@@ -154,13 +156,14 @@ Each agent has its own context, its own branch, its own working directory. They 
 
 ## Security Note
 
-All of this runs on servers that are invisible to the public internet. The security stack:
+Running Claude on a remote server is safer than running it locally. If something goes wrong, the damage is limited to one server - not your laptop with all your credentials and personal files.
 
-- **Tailscale** - Private mesh network, no public IP exposure
+The servers are invisible to the public internet:
+
+- **Tailscale** - Private mesh network, no public IP
 - **UFW** - Firewall allowing only Tailscale traffic
-- **fail2ban** - Auto-bans IPs after failed login attempts
 
-Even if one layer fails, the others protect you.
+No exposed ports, no attack surface.
 
 ---
 
@@ -171,3 +174,7 @@ Even if one layer fails, the others protect you.
 - <a href="https://awesomeclaude.ai/ralph-wiggum" target="_blank">Ralph Wiggum</a> - Long-running task loops
 - <a href="https://termius.com" target="_blank">Termius</a> - Mobile terminal with mosh support
 - <a href="https://wispr.flow" target="_blank">Wispr Flow</a> - Voice transcription for mobile
+
+---
+
+Pick the quadrant that solves your biggest problem. For most, that's on-the-go development. The rest follows.
