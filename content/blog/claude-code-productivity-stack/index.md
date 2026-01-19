@@ -12,7 +12,7 @@ The landscape of software engineering is changing fast; makers are shifting to o
 
 ## The Shift
 
-Over the last six months, coding agents have become dramatically more capable. Claude (my tool of choice) can now plan, execute, and iterate on complex tasks until objectives are met. It'll tirelessly work through documentation and tests that would bore any human. Most importantly, it can work for extended periods without supervision - given clear direction.
+Over the last six months, coding agents have become dramatically more capable. Claude Code (my tool of choice) can now plan, execute, and iterate on complex tasks until objectives are met. It'll tirelessly work through documentation and tests that would bore any human. Most importantly, it can work for extended periods without supervision - given clear direction.
 
 This changes what my job looks like. I spend less time writing code and more time:
 
