@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Jan 2026 12:18:35 GMT</lastBuildDate><item><title><![CDATA[My Claude Code Productivity Stack]]></title><description><![CDATA[I used to sit at my laptop watching Claude Code work. Now I set tasks running and check in when needed.]]></description><link>https://quantably.co/claude-code-productivity-stack/</link><guid isPermaLink="false">https://quantably.co/claude-code-productivity-stack/</guid><pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I used to sit at my laptop watching Claude Code work. Now I set tasks running and check in when needed. &lt;!-- excerpt --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Peter Wooldridge | Blog]]></title><description><![CDATA[Living and working in London, Peter Wooldridge explores topics in AI.]]></description><link>https://quantably.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Feb 2026 20:09:27 GMT</lastBuildDate><item><title><![CDATA[Stop Asking AI Questions. Make It Ask You.]]></title><description><![CDATA[Two things are happening as coding agents improve. First, the sheer volume and speed of AI-generated changes makes it hard to care about…]]></description><link>https://quantably.co/make-ai-ask-you/</link><guid isPermaLink="false">https://quantably.co/make-ai-ask-you/</guid><pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Two things are happening as coding agents improve. First, the sheer volume and speed of AI-generated changes makes it hard to care about each one individually. Second - and more concerning - my capacity for judgement feels like it&apos;s slowly eroding.&lt;/p&gt;
+&lt;p&gt;The standard advice is clear:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;you should be able to explain any production code that&apos;s committed, even if it was written by an agent.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I know that. I just can&apos;t motivate myself to.&lt;/p&gt;
+&lt;p&gt;It&apos;s hard to care as much about code I didn&apos;t write much of - especially when it&apos;s also far easier to generate than before.&lt;/p&gt;
+&lt;p&gt;The feedback loop I&apos;m seeing play out looks as follows:&lt;/p&gt;
+&lt;p&gt;AI provides code → human feels relief (problem solved, uncertainty gone) → outcome is acceptable → questioning feels like unnecessary effort → human defers more readily next time → judgement atrophies&lt;/p&gt;
+&lt;p&gt;Sure, I still have eureka moments where I catch something the AI missed. But those wins are trending down. Not hard down, but down.&lt;/p&gt;
+&lt;p&gt;I think we need to be concerned with this, and it represents an overlooked risk in the extinction scenarios that dominate the AI safety discourse. What if the AI gets out of control, not because of its super human intelligence but because we simply stopped exercising our judgement over it. The riskiest part is that if this happens gradually enough we might not even notice.&lt;/p&gt;
+&lt;h2&gt;This isn&apos;t just me&lt;/h2&gt;
+&lt;p&gt;Humans in general have a tendency to over-rely on automated recommendations. It&apos;s called automation bias which can give rise to two types of errors:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Over-reliance on automated recommendations even when contradictory information exists&lt;/li&gt;
+&lt;li&gt;Failing to act when the automation doesn&apos;t provide a recommendation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Both of these apply to AI-assisted coding. We accept generated code even when our instincts suggest problems. We fail to act when AI doesn&apos;t flag something.&lt;/p&gt;
+&lt;p&gt;The well cited example that showcases both of these errors was &lt;a href=&quot;https://en.wikipedia.org/wiki/Air_France_Flight_447&quot;&gt;Air France 447&lt;/a&gt; which crashed in 2009. The automation disengaged and the pilots, unaccustomed to flying manually at that altitude, were unable to recover.&lt;/p&gt;
+&lt;h2&gt;The inversion&lt;/h2&gt;
+&lt;p&gt;The idea came to me whilst using an LLM to interrogate a podcast transcript. I&apos;d ask follow-up questions to crystallise my understanding - but the verbosity made it hard to take in.&lt;/p&gt;
+&lt;p&gt;So I tried something different. After my questions, I asked the AI to quiz me instead - identify gaps in my understanding. It worked remarkably well. Not just ingraining new ideas, but highlighting where I was still missing clarity.&lt;/p&gt;
+&lt;p&gt;It turns out a research group already did this with students. &lt;a href=&quot;https://solve.mit.edu/solutions/90692&quot; target=&quot;_blank&quot;&gt;Socratic Mind&lt;/a&gt; had students use an LLM to learn, then get quizzed until the AI was satisfied they understood. More effort, but unsurprisingly, much better long-term recall.&lt;/p&gt;
+&lt;h2&gt;Applying this to code&lt;/h2&gt;
+&lt;p&gt;My next idea was whether the same approach could be applied to coding. A pre-commit hook seemed like the obvious mechanism, but that&apos;s awkward to wire up to an interactive LLM session. Instead, I built it as a Claude Code skill - when I&apos;m ready to commit, I invoke it, get quizzed, and it only commits if I pass.&lt;/p&gt;
+&lt;p&gt;The obvious objection is that this adds friction. But friction already exists - it just shows up later, when something breaks and I realise I never understood why the code was shaped that way. The models being right more often makes this worse, not better. Success breeds complacency.&lt;/p&gt;
+&lt;h2&gt;What makes a good question&lt;/h2&gt;
+&lt;p&gt;The goal is to expose gaps between what code does and why it&apos;s shaped that way. A bad question can be answered by reading the code back - &quot;what does this function do?&quot; proves nothing. A good question forces engagement with trade-offs. &quot;Why a map here instead of a for loop?&quot; - I either thought about that or I didn&apos;t. No way to fake it.
+The categories that matter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The problem - Not just &quot;add rate limiting&quot; but why it&apos;s needed here, what it&apos;s protecting against&lt;/li&gt;
+&lt;li&gt;The key decisions - Where were there choices? What drove them? This is where AI-generated code is most dangerous - choices were made, but not by you&lt;/li&gt;
+&lt;li&gt;The boundaries - What this code handles and what it explicitly doesn&apos;t&lt;/li&gt;
+&lt;li&gt;The failure behaviour - Not every edge case, but the general character. Silently? Loudly? Gracefully?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are also the things that matter for maintenance. Knowing what code does tells you what IS happening. Why it&apos;s shaped that way tells you what SHOULD be happening - which is how you spot when something&apos;s wrong.&lt;/p&gt;
+&lt;h2&gt;The transition period&lt;/h2&gt;
+&lt;p&gt;Right now, AI-generated code is good but not reliable enough for full autonomy. Despite the narrative that you describe requirements and watch it get built, SWEs are still required for anything non-trivial. Maybe a day comes where they&apos;re not - we don&apos;t require understanding of combustion engines to drive a car.
+But we&apos;re not there yet. Humans are still legally and professionally responsible. Someone needs to understand when things go wrong. And AI explanations of AI-generated code may be just as unreliable as the code itself.
+Things are moving quickly. But right now, maintaining judgement might be the difference between catching something wrong or missing it entirely.&lt;/p&gt;
+&lt;h2&gt;Try it yourself&lt;/h2&gt;
+&lt;p&gt;I built this as a Claude Code skill - a drop-in replacement for git commit -m. When invoked, Claude quizzes me on the change before committing. Not explaining or reviewing, but verifying I&apos;ve actually understood what&apos;s about to ship. It scales the questioning to the magnitude of the change - a one-line fix doesn&apos;t need five questions.&lt;/p&gt;
+&lt;h3&gt;Step 1: Create the skill file&lt;/h3&gt;
+&lt;p&gt;Create a file at your skills location (e.g., ~/.claude/skills/socratic-commit-review.md) and insert the skill from &lt;a href=&quot;https://gist.github.com/quantably/a96478ebd4791ba8b215171502e0776a&quot; target=&quot;_blank&quot;&gt;this gist&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Step 2: When you&apos;re ready to commit&lt;/h3&gt;
+&lt;p&gt;Instead of git commit -m, run /socratic-commit-review. Claude asks questions about your changes, then marks you PROCEED or REFLECT. Proceed prompts for a commit message and commits. Reflect suggests areas where your understanding was shaky.&lt;/p&gt;
+&lt;p&gt;Here&apos;s an example interaction on a health app I&apos;m working on:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bf1c67c7da3a008a65ae5167a4f0e12d/f51c0/skill-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbElEQVR42kVSWXaDMAzkIi14AQNhSV8atrIHev8bTSUB6cc8SWNblkbyEhchiRkOodWIQoPIGvIPuMiKZT4053lo5S6/5dj//HjDK4scWZbDnYk5QexCxFEovqPH/FnM54T0/NgaBauVWCnAHJzXtS36vsc4DpinEePQC/r+BwOBbf/Tkd+/0XUt2rZB2zRomlr8uqpQFgW8LE2QJrFUwJWlCVVAVWmlYPQB9rUKDv/EVZ2lyozWcqYCH15+S5ClsWjhTm3YXuB2oujQVTiWwTkYG8L3A0oSnB8HR8vTOGLfN2zbS+zvvmOeJyzLLFjXReJ1XcV/vVa6u2FeFgzDgGmaSKKB7i74fjwoIQX8YCINF05EEI1IG9GHdKqeT9Ho4uqa+QodacdoKGb7VZbwbtQuT/SaakzgaXILWvnQpAvrJxqeEF7981fMrXv3IqPMOe60PjwUXh3eO6MvwQ/LnFheDxmKlviC6KgC/AFfQxC1msXZUgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Example interaction with the socratic commit review skill&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bf1c67c7da3a008a65ae5167a4f0e12d/f058b/skill-example.png&quot;
+        srcset=&quot;/static/bf1c67c7da3a008a65ae5167a4f0e12d/c26ae/skill-example.png 158w,
+/static/bf1c67c7da3a008a65ae5167a4f0e12d/6bdcf/skill-example.png 315w,
+/static/bf1c67c7da3a008a65ae5167a4f0e12d/f058b/skill-example.png 630w,
+/static/bf1c67c7da3a008a65ae5167a4f0e12d/40601/skill-example.png 945w,
+/static/bf1c67c7da3a008a65ae5167a4f0e12d/78612/skill-example.png 1260w,
+/static/bf1c67c7da3a008a65ae5167a4f0e12d/f51c0/skill-example.png 2994w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Closing Thoughts&lt;/h2&gt;
+&lt;p&gt;Getting quizzed cements why something was implemented a certain way. More surprisingly, it surfaces bugs - mismatches between what I thought I&apos;d asked for and what the AI generated. Those only become visible when you&apos;re forced to explain the implementation back. Even when there are no bugs, thinking through the code surfaces simpler approaches I&apos;d have otherwise missed.&lt;/p&gt;
+&lt;p&gt;The friction is the point.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Claude Code Productivity Stack]]></title><description><![CDATA[I used to sit at my laptop watching Claude Code work. Now I set tasks running and check in when needed.]]></description><link>https://quantably.co/claude-code-productivity-stack/</link><guid isPermaLink="false">https://quantably.co/claude-code-productivity-stack/</guid><pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I used to sit at my laptop watching Claude Code work. Now I set tasks running and check in when needed. &lt;!-- excerpt --&gt;&lt;/p&gt;
 &lt;p&gt;If you&apos;re still babysitting every session, this post is for you.&lt;/p&gt;
 &lt;h2&gt;The Shift&lt;/h2&gt;
 &lt;p&gt;Coding agents got good. Claude Code can plan, execute, and iterate until objectives are met. It works for hours without supervision if you give it clear direction.&lt;/p&gt;
