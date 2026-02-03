@@ -72,11 +72,11 @@ Things are moving quickly. But right now, maintaining judgement might be the dif
 
 ## Try it yourself
 
-I built this as a Claude Code skill - a drop-in replacement for git commit -m. When invoked, Claude quizzes me on the change before committing. Not explaining or reviewing, but verifying I've actually understood what's about to ship. It scales the questioning to the magnitude of the change - a one-line fix doesn't need five questions.
+The skill works as a drop-in replacement for `git commit -m`, and scales questioning to the magnitude of the change - a one-line fix doesn't need five questions.
 
 ### Step 1: Create the skill file
 
-Create a file at your skills location (e.g., ~/.claude/skills/socratic-commit-review.md) and insert the skill from <a href="https://gist.github.com/quantably/a96478ebd4791ba8b215171502e0776a" target="_blank">this gist</a>.
+Create a file at .claude/skills/socratic-commit-review.md in your repo (or ~/.claude/skills/ for global use) and insert the skill from <a href="https://gist.github.com/quantably/a96478ebd4791ba8b215171502e0776a" target="_blank">this gist</a>.
 
 ### Step 2: When you're ready to commit
 
