@@ -174,7 +174,7 @@ const HomePage = ({ data, location }) => {
 
       {/* CTA Footer */}
       <div className="cta-section">
-        <h2>I'm always open to <em>new conversations.</em></h2>
+        <h2>Get in touch.</h2>
         <div className="cta-links">
           <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>
           <a href="https://linkedin.com/in/peterwooldridge" target="_blank" rel="noopener noreferrer">LinkedIn</a>
