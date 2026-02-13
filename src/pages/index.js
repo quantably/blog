@@ -59,7 +59,7 @@ const HomePage = ({ data, location }) => {
         <div className="story-grid">
           <div>
             <p>One camp says AI will replace everyone. The other says it's overhyped nonsense. Meanwhile, the companies actually winning aren't in either camp. They're too busy deploying.</p>
-            <p>"Is AI truly intelligent?" is a perfectly valid question. But spending too long on it can mean losing sight of the practical value AI delivers right now. It doesn't need to be perfect to be useful.</p>
+            <p>I don't know if AI is truly intelligent. But one should not lose sight of the practical value it delivers right now. It doesn't need to be perfect to be useful.</p>
           </div>
           <div>
             <p>That shift in framing recently helped one client scale their coaching platform beyond capacity constraints in six weeks, and another validate a completely new AI-driven market offering in the same timeframe.</p>
