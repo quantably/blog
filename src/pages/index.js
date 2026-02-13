@@ -101,6 +101,7 @@ const HomePage = ({ data, location }) => {
             <ul>
               <li>Your team uses the latest tools, configured securely</li>
               <li>AI costs stay lean as usage scales</li>
+              <li>Curated guidance based on what's working right now</li>
               <li>Clear paths from experimentation to live automation</li>
               <li>No time lost on infrastructure or DevOps</li>
               <li>Answers when you need them, via Slack or your preferred channel</li>
