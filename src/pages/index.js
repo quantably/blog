@@ -99,7 +99,7 @@ const HomePage = ({ data, location }) => {
             <h3>Enable</h3>
             <p className="mode-desc">Your team doesn't need to be technical to benefit from AI. They need someone showing them what's possible, keeping them on track, and making sure they're using the right tools for the job.</p>
             <ul>
-              <li>Your team confident with the latest AI tools</li>
+              <li>Use bleeding-edge AI tools safely and securely</li>
               <li>Curated guidance based on what's working right now</li>
               <li>Clear paths from experimentation to real results</li>
               <li>AI costs stay lean as usage scales</li>
