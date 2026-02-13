@@ -139,7 +139,7 @@ const HomePage = ({ data, location }) => {
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2020 - 2024</div>
-            <div className="timeline-text">Startup ecosystem. Scaled teams from 3 to 20+.</div>
+            <div className="timeline-text">Startup ecosystem. Scaled teams from 3 to 20+, through to acquisition.</div>
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2015 - 2020</div>
