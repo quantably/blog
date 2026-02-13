@@ -97,16 +97,15 @@ const HomePage = ({ data, location }) => {
               <span>Monthly retainer</span>
             </div>
             <h3>Enable</h3>
-            <p className="mode-desc">Sometimes a capable team doesn't need someone to do the work. They need someone nudging in the right direction, providing regular checkpoints, and keeping them sharp as the landscape shifts under their feet.</p>
+            <p className="mode-desc">Your team doesn't need to be technical to benefit from AI. They need someone showing them what's possible, keeping them on track, and making sure they're using the right tools for the job.</p>
             <ul>
-              <li>Your team uses the latest tools, configured securely</li>
-              <li>AI costs stay lean as usage scales</li>
+              <li>Your team confident with the latest AI tools</li>
               <li>Curated guidance based on what's working right now</li>
-              <li>Clear paths from experimentation to live automation</li>
-              <li>No time lost on infrastructure or DevOps</li>
+              <li>Clear paths from experimentation to real results</li>
+              <li>AI costs stay lean as usage scales</li>
               <li>Answers when you need them, via Slack or your preferred channel</li>
             </ul>
-            <div className="mode-fit">Best for: Teams who want to move fast with AI without managing the infrastructure themselves.</div>
+            <div className="mode-fit">Best for: Any team that wants to use AI effectively, whether they're technical or not.</div>
           </div>
         </div>
       </section>
