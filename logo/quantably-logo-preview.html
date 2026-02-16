@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantably Logo Options</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #0d0e12;
+    color: #e8e8ec;
+    padding: 4rem 2rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #6a6a78;
+    margin-bottom: 4rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .option {
+    text-align: center;
+  }
+  .option h2 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #3a3a44;
+    margin-bottom: 2rem;
+  }
+  .previews {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .preview-box {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .preview-box.dark { background: #0d0e12; border: 1px solid #222330; }
+  .preview-box.light { background: #ffffff; border: 1px solid #e0e0e0; }
+  .preview-box.linkedin { background: #0a66c2; border: 1px solid #0a66c2; }
+  .preview-box svg { display: block; }
+  .size-label {
+    font-size: 0.6rem;
+    color: #3a3a44;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  .preview-col { display: flex; flex-direction: column; align-items: center; }
+  .desc {
+    font-size: 0.8rem;
+    color: #6a6a78;
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<h1>Quantably Logo Options</h1>
+
+<div class="options">
+
+  <!-- Option A: Geometric Q with data trail -->
+  <div class="option">
+    <h2>Option A - Geometric Q</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="142" cy="138" r="72" stroke="#00e07a" stroke-width="16"/>
+            <line x1="190" y1="186" x2="232" y2="228" stroke="#00e07a" stroke-width="16" stroke-linecap="round"/>
+            <circle cx="232" cy="228" r="8" fill="#00e07a"/>
+            <circle cx="218" cy="248" r="5" fill="#00e07a" opacity="0.5"/>
+            <circle cx="248" cy="238" r="4" fill="#00e07a" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="142" cy="138" r="72" stroke="#00e07a" stroke-width="16"/>
+            <line x1="190" y1="186" x2="232" y2="228" stroke="#00e07a" stroke-width="16" stroke-linecap="round"/>
+            <circle cx="232" cy="228" r="8" fill="#00e07a"/>
+            <circle cx="218" cy="248" r="5" fill="#00e07a" opacity="0.5"/>
+            <circle cx="248" cy="238" r="4" fill="#00e07a" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="142" cy="138" r="72" stroke="#00e07a" stroke-width="16"/>
+            <line x1="190" y1="186" x2="232" y2="228" stroke="#00e07a" stroke-width="16" stroke-linecap="round"/>
+            <circle cx="232" cy="228" r="8" fill="#00e07a"/>
+            <circle cx="218" cy="248" r="5" fill="#00e07a" opacity="0.5"/>
+            <circle cx="248" cy="238" r="4" fill="#00e07a" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">A Q formed from a circle with a tail that scatters into data points. Clean, recognizable at any size.</p>
+  </div>
+
+  <!-- Option B: Minimal Q lettermark -->
+  <div class="option">
+    <h2>Option B - Sharp Lettermark</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="144" cy="134" r="68" stroke="#e8e8ec" stroke-width="14"/>
+            <line x1="186" y1="176" x2="242" y2="248" stroke="#00e07a" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="144" cy="134" r="68" stroke="#e8e8ec" stroke-width="14"/>
+            <line x1="186" y1="176" x2="242" y2="248" stroke="#00e07a" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="144" cy="134" r="68" stroke="#e8e8ec" stroke-width="14"/>
+            <line x1="186" y1="176" x2="242" y2="248" stroke="#00e07a" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">White Q circle with a green diagonal tail. Two-tone gives depth. The green accent draws the eye.</p>
+  </div>
+
+  <!-- Option C: Abstract nodes -->
+  <div class="option">
+    <h2>Option C - Network Node</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <!-- Connecting lines -->
+            <line x1="150" y1="80" x2="82" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="218" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <!-- Outer ring suggestion -->
+            <circle cx="150" cy="150" r="90" stroke="#222330" stroke-width="1.5" stroke-dasharray="4 8"/>
+            <!-- Nodes -->
+            <circle cx="150" cy="80" r="14" fill="#00e07a"/>
+            <circle cx="82" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="218" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="150" cy="220" r="14" fill="#00e07a"/>
+            <!-- Center node -->
+            <circle cx="150" cy="150" r="18" fill="#00e07a"/>
+            <circle cx="150" cy="150" r="8" fill="#0d0e12"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <line x1="150" y1="80" x2="82" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="218" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <circle cx="150" cy="150" r="90" stroke="#222330" stroke-width="1.5" stroke-dasharray="4 8"/>
+            <circle cx="150" cy="80" r="14" fill="#00e07a"/>
+            <circle cx="82" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="218" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="150" cy="220" r="14" fill="#00e07a"/>
+            <circle cx="150" cy="150" r="18" fill="#00e07a"/>
+            <circle cx="150" cy="150" r="8" fill="#0d0e12"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <line x1="150" y1="80" x2="82" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="218" y1="150" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <line x1="82" y1="150" x2="218" y2="150" stroke="#222330" stroke-width="3"/>
+            <line x1="150" y1="80" x2="150" y2="220" stroke="#222330" stroke-width="3"/>
+            <circle cx="150" cy="150" r="90" stroke="#222330" stroke-width="1.5" stroke-dasharray="4 8"/>
+            <circle cx="150" cy="80" r="14" fill="#00e07a"/>
+            <circle cx="82" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="218" cy="150" r="11" fill="#e8e8ec"/>
+            <circle cx="150" cy="220" r="14" fill="#00e07a"/>
+            <circle cx="150" cy="150" r="18" fill="#00e07a"/>
+            <circle cx="150" cy="150" r="8" fill="#0d0e12"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">Abstract network/graph mark. Suggests connected thinking, data, and AI. More complex but distinctive.</p>
+  </div>
+
+  <!-- Option D: Monogram block -->
+  <div class="option">
+    <h2>Option D - Bold Monogram</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <text x="150" y="195" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="180" fill="#e8e8ec">Q</text>
+            <rect x="168" y="195" width="80" height="6" rx="3" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <text x="150" y="195" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="180" fill="#e8e8ec">Q</text>
+            <rect x="168" y="195" width="80" height="6" rx="3" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <text x="150" y="195" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="180" fill="#e8e8ec">Q</text>
+            <rect x="168" y="195" width="80" height="6" rx="3" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">Bold typographic Q in Space Grotesk with a green underline accent. Simple, confident, instantly readable.</p>
+  </div>
+
+  <!-- Option E: Pulse/signal Q -->
+  <div class="option">
+    <h2>Option E - Signal Q</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="140" cy="135" r="70" stroke="#e8e8ec" stroke-width="12"/>
+            <!-- Tail as signal/pulse -->
+            <path d="M188 183 L208 183 L218 158 L228 213 L238 173 L258 173" stroke="#00e07a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="140" cy="135" r="70" stroke="#e8e8ec" stroke-width="12"/>
+            <path d="M188 183 L208 183 L218 158 L228 213 L238 173 L258 173" stroke="#00e07a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <circle cx="140" cy="135" r="70" stroke="#e8e8ec" stroke-width="12"/>
+            <path d="M188 183 L208 183 L218 158 L228 213 L238 173 L258 173" stroke="#00e07a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">Q with the tail replaced by a pulse/signal line. Suggests measurement, analytics, and live data. Merges the Q letterform with a quantitative motif.</p>
+  </div>
+
+  <!-- Option F: Stacked bars Q -->
+  <div class="option">
+    <h2>Option F - Minimal Bars</h2>
+    <div class="previews">
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <!-- Three ascending bars -->
+            <rect x="72" y="170" width="32" height="60" rx="4" fill="#6a6a78"/>
+            <rect x="118" y="120" width="32" height="110" rx="4" fill="#a0a0ae"/>
+            <rect x="164" y="80" width="32" height="150" rx="4" fill="#e8e8ec"/>
+            <!-- Green accent bar -->
+            <rect x="210" y="100" width="32" height="130" rx="4" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Dark bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box light" style="width:140px;height:140px;">
+          <svg width="100" height="100" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <rect x="72" y="170" width="32" height="60" rx="4" fill="#6a6a78"/>
+            <rect x="118" y="120" width="32" height="110" rx="4" fill="#a0a0ae"/>
+            <rect x="164" y="80" width="32" height="150" rx="4" fill="#e8e8ec"/>
+            <rect x="210" y="100" width="32" height="130" rx="4" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Light bg</div>
+      </div>
+      <div class="preview-col">
+        <div class="preview-box dark" style="width:60px;height:60px;">
+          <svg width="40" height="40" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="300" rx="40" fill="#0d0e12"/>
+            <rect x="72" y="170" width="32" height="60" rx="4" fill="#6a6a78"/>
+            <rect x="118" y="120" width="32" height="110" rx="4" fill="#a0a0ae"/>
+            <rect x="164" y="80" width="32" height="150" rx="4" fill="#e8e8ec"/>
+            <rect x="210" y="100" width="32" height="130" rx="4" fill="#00e07a"/>
+          </svg>
+        </div>
+        <div class="size-label">Small</div>
+      </div>
+    </div>
+    <p class="desc">Abstract ascending bars with a green accent. Suggests growth, data, and quantitative analysis. No letterform - purely abstract.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
