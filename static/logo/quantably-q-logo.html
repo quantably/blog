@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quantably Q Logo</title>
+<style>
+  body { background: #1a1a2e; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; min-height: 100vh; gap: 60px; padding: 40px; font-family: system-ui; }
+  .preview { text-align: center; }
+  .preview p { color: #666; margin-top: 12px; font-size: 14px; }
+  .dark-bg { background: #0d0e12; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+  .light-bg { background: #ffffff; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+  .small { width: 48px; height: 48px; border-radius: 8px; }
+  h2 { color: #888; font-weight: 300; letter-spacing: 4px; text-transform: uppercase; font-size: 13px; width: 100%; text-align: center; margin: 30px 0 0; }
+</style>
+</head>
+<body>
+
+<h2>Option A - Rounded Square Q</h2>
+
+<div class="preview">
+  <div class="dark-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer rounded square -->
+      <rect x="15" y="15" width="130" height="130" rx="24" fill="#00e07a"/>
+      <!-- Inner cutout -->
+      <rect x="42" y="42" width="76" height="76" rx="12" fill="#0d0e12"/>
+      <!-- Diagonal tail - two parallel bars -->
+      <rect x="105" y="120" width="14" height="50" rx="3" transform="rotate(-40 112 145)" fill="#00e07a"/>
+      <rect x="120" y="113" width="14" height="50" rx="3" transform="rotate(-40 127 138)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>Dark bg</p>
+</div>
+
+<div class="preview">
+  <div class="light-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="15" y="15" width="130" height="130" rx="24" fill="#0d0e12"/>
+      <rect x="42" y="42" width="76" height="76" rx="12" fill="#ffffff"/>
+      <rect x="105" y="120" width="14" height="50" rx="3" transform="rotate(-40 112 145)" fill="#0d0e12"/>
+      <rect x="120" y="113" width="14" height="50" rx="3" transform="rotate(-40 127 138)" fill="#0d0e12"/>
+    </svg>
+  </div>
+  <p>Light bg</p>
+</div>
+
+<div class="preview">
+  <div class="dark-bg small">
+    <svg width="32" height="32" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="15" y="15" width="130" height="130" rx="24" fill="#00e07a"/>
+      <rect x="42" y="42" width="76" height="76" rx="12" fill="#0d0e12"/>
+      <rect x="105" y="120" width="14" height="50" rx="3" transform="rotate(-40 112 145)" fill="#00e07a"/>
+      <rect x="120" y="113" width="14" height="50" rx="3" transform="rotate(-40 127 138)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>48px</p>
+</div>
+
+<h2>Option B - Octagonal Q</h2>
+
+<div class="preview">
+  <div class="dark-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer octagon-ish shape (clipped corners) -->
+      <path d="M55 18 L125 18 L162 55 L162 125 L125 162 L55 162 L18 125 L18 55 Z" fill="#00e07a"/>
+      <!-- Inner cutout -->
+      <path d="M68 46 L112 46 L134 68 L134 112 L112 134 L68 134 L46 112 L46 68 Z" fill="#0d0e12"/>
+      <!-- Single clean diagonal tail -->
+      <rect x="122" y="130" width="16" height="44" rx="4" transform="rotate(-45 130 152)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>Dark bg</p>
+</div>
+
+<div class="preview">
+  <div class="light-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M55 18 L125 18 L162 55 L162 125 L125 162 L55 162 L18 125 L18 55 Z" fill="#0d0e12"/>
+      <path d="M68 46 L112 46 L134 68 L134 112 L112 134 L68 134 L46 112 L46 68 Z" fill="#ffffff"/>
+      <rect x="122" y="130" width="16" height="44" rx="4" transform="rotate(-45 130 152)" fill="#0d0e12"/>
+    </svg>
+  </div>
+  <p>Light bg</p>
+</div>
+
+<div class="preview">
+  <div class="dark-bg small">
+    <svg width="32" height="32" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M55 18 L125 18 L162 55 L162 125 L125 162 L55 162 L18 125 L18 55 Z" fill="#00e07a"/>
+      <path d="M68 46 L112 46 L134 68 L134 112 L112 134 L68 134 L46 112 L46 68 Z" fill="#0d0e12"/>
+      <rect x="122" y="130" width="16" height="44" rx="4" transform="rotate(-45 130 152)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>48px</p>
+</div>
+
+<h2>Option C - Clean Circle Q</h2>
+
+<div class="preview">
+  <div class="dark-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer circle -->
+      <circle cx="85" cy="85" r="70" fill="#00e07a"/>
+      <!-- Inner cutout -->
+      <circle cx="85" cy="85" r="42" fill="#0d0e12"/>
+      <!-- Diagonal tail bar -->
+      <rect x="110" y="110" width="16" height="52" rx="4" transform="rotate(-45 118 136)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>Dark bg</p>
+</div>
+
+<div class="preview">
+  <div class="light-bg" style="width:300px;height:300px;">
+    <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="85" cy="85" r="70" fill="#0d0e12"/>
+      <circle cx="85" cy="85" r="42" fill="#ffffff"/>
+      <rect x="110" y="110" width="16" height="52" rx="4" transform="rotate(-45 118 136)" fill="#0d0e12"/>
+    </svg>
+  </div>
+  <p>Light bg</p>
+</div>
+
+<div class="preview">
+  <div class="dark-bg small">
+    <svg width="32" height="32" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="85" cy="85" r="70" fill="#00e07a"/>
+      <circle cx="85" cy="85" r="42" fill="#0d0e12"/>
+      <rect x="110" y="110" width="16" height="52" rx="4" transform="rotate(-45 118 136)" fill="#00e07a"/>
+    </svg>
+  </div>
+  <p>48px</p>
+</div>
+
+</body>
+</html>

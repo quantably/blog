@@ -1,5 +1,4 @@
-// import React from 'react';
-// import Layout from './src/components/layout';
+const React = require('react')
 
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
@@ -10,11 +9,24 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
+exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: `en` })
+  setHeadComponents([
+    React.createElement('link', {
+      key: 'preconnect-fonts',
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
+    }),
+    React.createElement('link', {
+      key: 'preconnect-gstatic',
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossOrigin: 'anonymous',
+    }),
+    React.createElement('link', {
+      key: 'google-fonts',
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap',
+    }),
+  ])
 }
-
-// export const wrapPageElement = ({ element, props }) => {
-//   console.log(`[gatsby-ssr.js] Wrapping element for path: ${props.location.pathname}`);
-//   return <Layout {...props}>{element}</Layout>;
-// };

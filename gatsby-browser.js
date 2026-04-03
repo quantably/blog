@@ -1,13 +1,10 @@
-// custom typefaces
-import "@fontsource-variable/montserrat"
-import "@fontsource/merriweather"
 // normalize CSS across browsers
 import "./src/normalize.css"
 // custom CSS styles
 import "./src/style.css"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "prismjs/themes/prism-solarizedlight.css"
 
 import mermaid from 'mermaid';
 
@@ -26,6 +23,14 @@ export const onInitialClientRender = () => {
   } catch (error) {
     console.error("[gatsby-browser.js] Error triggering Mermaid rendering:", error);
   }
+};
+
+// Scroll to top on forward navigation, restore position on back/forward
+export const shouldUpdateScroll = ({ routerProps, getSavedScrollPosition }) => {
+  if (routerProps.location.action === 'POP') {
+    return getSavedScrollPosition(routerProps.location) || [0, 0];
+  }
+  return [0, 0];
 };
 
 // Optional: Re-run Mermaid on route updates if diagrams might be added dynamically

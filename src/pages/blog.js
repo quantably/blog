@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import ScrollReveal from "../components/ScrollReveal"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
@@ -11,88 +12,64 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
+        <div className="page-header">
+          <h1>Writing</h1>
+          <p>No blog posts found.</p>
+        </div>
       </Layout>
     )
   }
 
+  // Group posts by year
+  const postsByYear = {}
+  posts.forEach(post => {
+    const year = new Date(post.frontmatter.rawDate).getFullYear()
+    if (!postsByYear[year]) postsByYear[year] = []
+    postsByYear[year].push(post)
+  })
+  const years = Object.keys(postsByYear).sort((a, b) => b - a)
+
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="text-center mb-16">
-          <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-6">Blog</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Insights on AI, leadership, and building products that work
-          </p>
-        </div>
-        
-        <div className="space-y-6">
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
+      <div className="page-header">
+        <h1>Writing</h1>
+        <p>On AI, leadership, and building products that actually work.</p>
+      </div>
 
-            return (
-              <article
-                key={post.fields.slug}
-                className="group"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between p-6 bg-white/10 hover:bg-white/20 rounded-xl transition-all duration-300 border border-white/20 hover:border-white/30">
-                  <div className="flex-1">
-                    <Link 
-                      to={`/blog${post.fields.slug}`} 
-                      itemProp="url"
-                      className="text-xl font-medium text-white group-hover:text-emerald-400 transition-colors duration-200"
-                    >
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                    {(post.frontmatter.description || post.excerpt) && (
-                      <p 
-                        className="text-gray-300 mt-2 text-sm"
-                        dangerouslySetInnerHTML={{
-                          __html: post.frontmatter.description || post.excerpt,
-                        }}
-                        itemProp="description"
-                      />
+      <ScrollReveal className="post-list">
+        {years.map(year => (
+          <React.Fragment key={year}>
+            <div className="post-year">{year}</div>
+            {postsByYear[year].map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+              return (
+                <div key={post.fields.slug} className="post-item">
+                  <Link to={`/blog${post.fields.slug}`} className="post-title-link">
+                    <span className="post-title">{title}</span>
+                  </Link>
+                  <div className="post-meta">
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+                      <div className="post-tags">
+                        {post.frontmatter.tags.map(tag => (
+                          <Link key={tag} to={`/tags/${tag}/`} className="post-tag">{tag}</Link>
+                        ))}
+                      </div>
                     )}
-                  </div>
-                  <div className="text-sm text-gray-400 mt-3 md:mt-0 md:ml-6 md:flex-shrink-0 font-mono">
-                    {post.frontmatter.date}
+                    <span className="post-date">{post.frontmatter.date}</span>
                   </div>
                 </div>
-              </article>
-            )
-          })}
-        </div>
-        
-        <div className="mt-16 text-center">
-          <Link 
-            to="/" 
-            className="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium text-lg transition-colors duration-200"
-          >
-            <svg className="w-5 h-5 mr-2 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            Back to home
-          </Link>
-        </div>
-      </div>
+              )
+            })}
+          </React.Fragment>
+        ))}
+      </ScrollReveal>
     </Layout>
   )
 }
 
 export default BlogIndex
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title="Writing" description="Thoughts on practical AI implementation and leadership." pathname="/blog/" />
 
 export const pageQuery = graphql`
   query {
@@ -108,14 +85,14 @@ export const pageQuery = graphql`
       }
     ) {
       nodes {
-        excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMM YYYY")
+          rawDate: date
           title
-          description
+          tags
         }
       }
     }

@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://quantably.co/sitemap-index.xml

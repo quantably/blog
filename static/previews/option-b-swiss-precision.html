@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Option B — Swiss Precision</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --surface: #F5F5F7;
+  --surface-hover: #EDEDF0;
+  --edge: #D8D8DE;
+  --edge-light: #E4E4EA;
+  --text: #0C0C1D;
+  --text-mid: #3D3D54;
+  --text-dim: #6B6B82;
+  --text-faint: #9D9DB2;
+  --accent: #1B3A8C;
+  --accent-soft: rgba(27, 58, 140, 0.8);
+  --accent-glow: rgba(27, 58, 140, 0.04);
+  --accent-electric: #3B5FD9;
+  --sans: 'Libre Franklin', -apple-system, sans-serif;
+  --display: 'Syne', -apple-system, sans-serif;
+}
+
+*, :after, :before { box-sizing: border-box; }
+
+html {
+  line-height: 1.6;
+  font-size: 18.7px;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+}
+
+::selection {
+  background: rgba(27, 58, 140, 0.1);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--display);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+p {
+  line-height: 1.625;
+  margin: 0 0 2rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes gentleBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@keyframes slideRight {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* NAV */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(216, 216, 222, 0.4);
+}
+.nav-name {
+  font-family: var(--display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-name:hover { color: var(--accent); }
+.nav-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-right a {
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-right a:hover { color: var(--text); }
+.nav-cta {
+  color: var(--bg) !important;
+  background: var(--accent);
+  padding: 0.5rem 1.25rem;
+  border-radius: 0;
+  transition: background 0.3s, color 0.3s !important;
+}
+.nav-cta:hover {
+  background: var(--accent-electric) !important;
+  color: #fff !important;
+}
+
+/* SECTION LABEL */
+.section-label {
+  font-family: var(--display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.section-label::before {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Geometric decorative element */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--edge);
+  transform: rotate(45deg);
+  pointer-events: none;
+  opacity: 0.4;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 18%;
+  right: 5.5%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid var(--accent);
+  transform: rotate(45deg);
+  pointer-events: none;
+  opacity: 0.12;
+}
+.hero-above {
+  font-family: var(--display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hero-above::before {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  color: var(--text);
+  margin-bottom: 2rem;
+  max-width: 850px;
+  letter-spacing: -0.04em;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent-electric);
+}
+.hero-body {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  max-width: 500px;
+  line-height: 1.75;
+  margin-bottom: 3.5rem;
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  transition: background 0.3s;
+  padding: 0.85rem 2rem;
+}
+.hero-cta:hover {
+  background: var(--accent-electric);
+}
+.hero-bullets {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.6s;
+}
+.hero-bullets span {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero-bullets span::before {
+  content: '';
+  width: 8px;
+  height: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3rem;
+  font-family: var(--display);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-faint);
+  writing-mode: vertical-rl;
+  animation: gentleBob 3s ease-in-out infinite;
+}
+.hero-above, .hero h1, .hero-body, .hero-cta {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero h1 { animation-delay: 0.15s; }
+.hero-body { animation-delay: 0.3s; }
+.hero-cta { animation-delay: 0.45s; }
+
+/* TESTIMONIALS */
+.testimonials {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.t-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.t-item {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-right: 1px solid var(--edge);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s;
+  border-left: 3px solid transparent;
+}
+.t-item:hover {
+  transform: scale(1.02);
+  border-left-color: var(--accent);
+  background: var(--surface);
+}
+.t-item:last-child { border-right: none; }
+.t-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 2rem;
+}
+.t-name {
+  font-family: var(--display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+.t-role {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  line-height: 1.5;
+}
+
+/* STORY */
+.story {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.story h2 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  letter-spacing: -0.03em;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 900px;
+}
+.story-grid p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  line-height: 1.9;
+}
+.accent-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-mid);
+  line-height: 1.55;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* SERVICES */
+.services {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.services h2 {
+  font-family: var(--display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+.services-sub {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  margin-bottom: 4rem;
+  max-width: 500px;
+}
+.modes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 2px solid var(--text);
+  border-bottom: 2px solid var(--text);
+}
+.mode-card {
+  padding: 3rem;
+  position: relative;
+  transition: background 0.3s;
+}
+.mode-card:hover { background: var(--surface); }
+.mode-card:first-child {
+  border-right: 1px solid var(--edge);
+}
+.mode-label {
+  font-family: var(--display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+.mode-retainer {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  font-family: var(--display);
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.mode-price {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.mode-card h3 {
+  font-family: var(--display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+  transition: color 0.3s;
+}
+.mode-card:hover h3 { color: var(--accent); }
+.mode-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+.mode-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.mode-card li {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--edge);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.mode-card li:last-child { border-bottom: none; }
+.mode-card li::before {
+  content: '';
+  width: 8px;
+  height: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.mode-fit {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-faint);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* WORK */
+.work {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.work-item {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--edge);
+}
+.work-item:last-of-type { border-bottom: none; }
+.work-item:first-of-type { border-top: 1px solid var(--edge); }
+.work-headline {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-mid);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.work-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+.work-name {
+  font-family: var(--display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+.work-meta span,
+.work-meta em {
+  font-size: 0.72rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+}
+.work-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  line-height: 1.75;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+.work-link {
+  font-family: var(--display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.work-link:hover { color: var(--accent); }
+
+/* ABOUT */
+.about {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-intro {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+.about-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 0;
+  background: var(--surface);
+  border: 2px solid var(--text);
+  overflow: hidden;
+  filter: grayscale(100%) contrast(1.15);
+}
+.about-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--edge) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-faint);
+}
+.about-intro h2 {
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+.about-intro p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--text-dim);
+  line-height: 1.85;
+  max-width: 550px;
+}
+.timeline {
+  border-left: 2px solid var(--text);
+  padding-left: 3rem;
+  margin-left: 1rem;
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 0.5rem;
+  width: 8px;
+  height: 2px;
+  background: var(--text-faint);
+  transform: translateX(-1px);
+}
+.timeline-item:first-child::before {
+  background: var(--accent);
+  width: 12px;
+}
+.timeline-year {
+  font-family: var(--display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  margin-bottom: 0.25rem;
+}
+.timeline-item:first-child .timeline-year { color: var(--accent); }
+.timeline-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-dim);
+}
+
+/* POSTS */
+.posts {
+  border-top: 2px solid var(--text);
+  padding: 8rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.posts h2 {
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.03em;
+}
+.p-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--edge);
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.3s;
+}
+.p-item:first-of-type { border-top: 1px solid var(--edge); }
+.p-item:hover { padding-left: 0.5rem; }
+.p-item:hover .p-title { color: var(--accent); }
+.p-title {
+  font-size: 1.05rem;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+.p-date {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+.posts-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-family: var(--display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.posts-link:hover { color: var(--accent); }
+
+/* CTA */
+.cta-section {
+  border-top: 2px solid var(--text);
+  padding: 10rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+.cta-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.cta-links a {
+  font-family: var(--display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.cta-links a:hover { color: var(--accent); }
+
+/* FOOTER */
+.site-footer {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 2px solid var(--text);
+  font-size: 0.68rem;
+  color: var(--text-faint);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-nav { padding: 1.25rem 1.5rem; }
+  .nav-right { display: none; }
+  .hero { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .hero-bullets { flex-direction: column; gap: 0.75rem; }
+  .hero-scroll { display: none; }
+  .testimonials { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .t-list { grid-template-columns: 1fr; }
+  .t-item { border-right: none; border-bottom: 1px solid var(--edge); }
+  .t-item:last-child { border-bottom: none; }
+  .story { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .story-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .services { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .modes-grid { grid-template-columns: 1fr; }
+  .mode-card:first-child { border-right: none; border-bottom: 1px solid var(--edge); }
+  .mode-retainer { position: static; margin-bottom: 1.25rem; }
+  .work { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .about { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .about-intro { grid-template-columns: 1fr; text-align: center; }
+  .about-photo { margin: 0 auto; }
+  .posts { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .cta-section { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .site-footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+/* Theme label */
+.theme-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 200;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.5rem 1rem;
+}
+</style>
+</head>
+<body>
+
+<div class="theme-badge">Option B — Swiss Precision</div>
+
+<nav class="site-nav">
+  <a href="#" class="nav-name">Quantably</a>
+  <div class="nav-right">
+    <a href="#">Blog</a>
+    <a href="#">Media</a>
+    <a href="#">LinkedIn</a>
+    <a href="#" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-above">AI Consulting</div>
+    <h1><em>"It's just pattern matching."</em> Your competitors don't care.</h1>
+    <p class="hero-body">They're too busy using it to ship faster, serve more clients, and do more with less. I help companies skip the AI debate and start getting results.</p>
+    <a href="#" class="hero-cta">Schedule a conversation &#8594;</a>
+    <div class="hero-bullets">
+      <span>No long-term commitment</span>
+      <span>Results in 6 weeks or less</span>
+      <span>15 years across IBM, Experian &amp; startups</span>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-label">Testimonials</div>
+    <div class="t-list">
+      <div class="t-item">
+        <div class="t-quote">"What makes Peter unique is how he applies lean startup principles to AI. Build fast, test with users, iterate on feedback, not months of theoretical planning."</div>
+        <div>
+          <div class="t-name">Richard Ahlfeld</div>
+          <div class="t-role">CEO &amp; Founder, Monolith</div>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-quote">"Peter works hard to ensure he understands the context of the work. He's capable, conscientious, and collaborative, which is why we continue to work with him."</div>
+        <div>
+          <div class="t-name">Andy Watson</div>
+          <div class="t-role">Chief Product Officer, Strategic Blue</div>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-quote">"A terrific collaborator who helped us quickly bring our genAI ideas to life. Patient, pragmatic and adaptable, he effectively communicates choices and challenges."</div>
+        <div>
+          <div class="t-name">Matt Walton</div>
+          <div class="t-role">Fractional Product Leader</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="section-label">Results</div>
+    <h2>Real results, not roadmaps.</h2>
+    <div class="story-grid">
+      <div>
+        <p>I helped one client scale from 15 to 100 participants without adding headcount. Another validated a new market offering in six weeks.</p>
+      </div>
+      <div>
+        <div class="accent-text">The companies winning with AI aren't the ones with the biggest budgets — they're the ones willing to deploy fast and learn. That's the gap I help you close.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="section-label">Services</div>
+    <h2>Two Ways to Work Together</h2>
+    <p class="services-sub">Whether you need it built or need your team equipped to build it themselves.</p>
+    <div class="modes-grid">
+      <div class="mode-card">
+        <div class="mode-label">Done-For-You</div>
+        <div class="mode-price">From £15k</div>
+        <h3>Build</h3>
+        <p class="mode-desc">You describe the outcome. I own the execution: architecture, implementation, and deployment into your environment. You get a working AI product.</p>
+        <ul>
+          <li>A working AI product, not a slide deck</li>
+          <li>Shipped into your environment, production-ready</li>
+          <li>Your team doesn't need to build or maintain it</li>
+          <li>Fixed scope, clear timeline</li>
+        </ul>
+        <div class="mode-fit">Best for: Companies without in-house AI capability who need a specific product shipped.</div>
+      </div>
+      <div class="mode-card">
+        <div class="mode-label">Done-With-You</div>
+        <div class="mode-price">From £2k/mo</div>
+        <div class="mode-retainer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6"/><path d="M21.34 13a10 10 0 1 1-2.84-8.36L21.5 8"/></svg>
+          <span>Monthly retainer</span>
+        </div>
+        <h3>Enable</h3>
+        <p class="mode-desc">Your team doesn't need to be technical to benefit from AI. They need someone showing them what's possible, keeping them on track, and making sure they're using the right tools for the job.</p>
+        <ul>
+          <li>Use bleeding-edge AI tools safely and securely</li>
+          <li>Curated guidance based on what's working right now</li>
+          <li>Clear paths from experimentation to real results</li>
+          <li>AI costs stay lean as usage scales</li>
+          <li>Answers when you need them, via Slack or your preferred channel</li>
+        </ul>
+        <div class="mode-fit">Best for: Any team that wants to use AI effectively, whether they're technical or not.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="section-label">Case Studies</div>
+    <div class="work-item">
+      <h3 class="work-headline">Scaling coaching with AI agents</h3>
+      <div class="work-meta">
+        <span class="work-name">Zinc VC</span>
+        <span>Solo Delivery</span>
+        <span>2025</span>
+        <em>Client Project</em>
+      </div>
+      <p class="work-desc">6 conversational AI agents replaced manual processes to scale a career coaching platform from 15 to 100 participants in 3 months.</p>
+      <div class="work-links">
+        <a href="#" class="work-link">Read case study &#8594;</a>
+      </div>
+    </div>
+    <div class="work-item">
+      <h3 class="work-headline">Training app for diabetic athletes</h3>
+      <div class="work-meta">
+        <span class="work-name">GlucoseInsights</span>
+        <span>Solo</span>
+        <span>2024</span>
+        <em>Creator</em>
+      </div>
+      <p class="work-desc">Multi-platform training app for Type 1 diabetic athletes, from concept to 100+ active users. Integrates Dexcom, Strava, Apple Health, Nightscout, and Tandem.</p>
+      <div class="work-links">
+        <a href="#" class="work-link">Live site &#8599;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="section-label">About</div>
+    <div class="about-intro">
+      <div class="about-photo">
+        <div class="about-photo-placeholder">PW</div>
+      </div>
+      <div>
+        <h2>Hey, I'm Peter</h2>
+        <p>I've spent 15 years in tech across IBM, Elsevier, Experian, and the startup ecosystem, where I scaled teams from 3 to 20+ people across data science, ML engineering, software development, and DevOps. My job is to help you start simple, prove value quickly, and focus on what actually solves your problems.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">Now</div>
+        <div class="timeline-text">Independent AI consultant. Helping companies ship AI products fast.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020 - 2025</div>
+        <div class="timeline-text">Monolith AI. Head of Data Science to Director of AI. Scaled teams from 3 to 20+, through to acquisition.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2018 - 2019</div>
+        <div class="timeline-text">Experian. ML for financial transaction categorisation at scale.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2015 - 2018</div>
+        <div class="timeline-text">Elsevier. ML across 500+ academic journals.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2010 - 2015</div>
+        <div class="timeline-text">IBM. Where it all started.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="posts">
+    <div class="section-label">Writing</div>
+    <h2>Recent Posts</h2>
+    <a href="#" class="p-item">
+      <span class="p-title">How to Build AI Products That Actually Ship</span>
+      <span class="p-date">Mar 2026</span>
+    </a>
+    <a href="#" class="p-item">
+      <span class="p-title">The Lean AI Playbook for Small Teams</span>
+      <span class="p-date">Feb 2026</span>
+    </a>
+    <a href="#" class="p-item">
+      <span class="p-title">Why Most AI Projects Fail Before They Start</span>
+      <span class="p-date">Jan 2026</span>
+    </a>
+    <a href="#" class="posts-link">View all articles &#8594;</a>
+  </section>
+
+  <div class="cta-section">
+    <h2>Get in touch.</h2>
+    <div class="cta-links">
+      <a href="#">Book a Call</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Peter Wooldridge</span>
+  <span>London, United Kingdom</span>
+</footer>
+
+</body>
+</html>

@@ -81,8 +81,8 @@ const plugins = [
               return Object.assign({}, node.frontmatter, {
                 description: node.excerpt,
                 date: node.frontmatter.date,
-                url: site.siteMetadata.siteUrl + node.fields.slug,
-                guid: site.siteMetadata.siteUrl + node.fields.slug,
+                url: site.siteMetadata.siteUrl + '/blog' + node.fields.slug,
+                guid: site.siteMetadata.siteUrl + '/blog' + node.fields.slug,
                 custom_elements: [{ "content:encoded": node.html }],
               })
             })
@@ -111,13 +111,14 @@ const plugins = [
       ],
     },
   },
+  `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: `Peter Wooldridge Blog`,
       short_name: `Peter Blog`,
       start_url: `/`,
-      background_color: `#ffffff`,
+      background_color: `#FAF7F2`,
       // This will impact how browsers show your PWA/website
       // https://css-tricks.com/meta-theme-color-and-trickery/
       // theme_color: `#663399`,
@@ -153,7 +154,7 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Peter Wooldridge`,
+    title: `Quantably`,
     author: {
       name: `Peter Wooldridge`,
       summary: `Living and working in London, Peter Wooldridge explores topics in AI.`,
