@@ -14,8 +14,8 @@ const HomePage = ({ data, location }) => {
       {/* Hero */}
       <section className="hero">
         <div className="hero-above">AI Consulting</div>
-        <h1><em>"It's just pattern matching."</em> Your competitors don't care.</h1>
-        <p className="hero-body">They're too busy using it to ship faster, serve more clients, and do more with less. I help companies skip the AI debate and start getting results.</p>
+        <h1>AI lets you build <em>anything.</em> I help you ship the <em>right</em> AI products.</h1>
+        <p className="hero-body">The barrier to building has never been lower. The barrier to choosing has never been higher. I bring the focus.</p>
         <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer" className="hero-cta">Schedule a conversation &#8594;</a>
         <div className="hero-bullets">
           <span>No long-term commitment</span>
@@ -53,66 +53,57 @@ const HomePage = ({ data, location }) => {
         </ScrollReveal>
       </ScrollReveal>
 
-      {/* Story / Problem */}
-      <ScrollReveal as="section" className="story">
-        <div className="section-label">Results</div>
-        <h2>Real results, not roadmaps.</h2>
-        <div className="story-grid">
-          <div>
-            <p>I helped one client scale from 15 to 100 participants without adding headcount. Another validated a new market offering in six weeks.</p>
-          </div>
-          <div>
-            <div className="accent-text">The companies winning with AI aren't the ones with the biggest budgets — they're the ones willing to deploy fast and learn. That's the gap I help you close.</div>
-          </div>
-        </div>
-      </ScrollReveal>
-
       {/* Services */}
-      <ScrollReveal as="section" className="services">
+      <ScrollReveal as="section" id="services" className="services">
         <div className="section-label">Services</div>
-        <h2>Two Ways to Work Together</h2>
-        <p className="services-sub">Whether you need it built or need your team equipped to build it themselves.</p>
+        <h2>Ways to Work Together</h2>
 
         <ScrollReveal className="modes-grid" staggerChildren>
           <div className="mode-card">
-            <div className="mode-label">Done-For-You</div>
-            <div className="mode-price">From £15k</div>
-            <h3>Build</h3>
-            <p className="mode-desc">You describe the outcome. I own the execution: architecture, implementation, and deployment into your environment. You get a working AI product.</p>
+            <h3>Strategy Workshop</h3>
+            <p className="mode-desc">A half-day workshop plus write-up to help you:</p>
             <ul>
-              <li>A working AI product, not a slide deck</li>
-              <li>Shipped into your environment, production-ready</li>
-              <li>Your team doesn't need to build or maintain it</li>
-              <li>Fixed scope, clear timeline</li>
+              <li>Clear picture of where AI fits in your business</li>
+              <li>A prioritised roadmap, not a hundred ideas</li>
+              <li>Aligned to your goals, not the hype cycle</li>
             </ul>
-            <div className="mode-fit">Best for: Companies without in-house AI capability who need a specific product shipped.</div>
+            <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer" className="mode-cta">Learn more &#8594;</a>
           </div>
           <div className="mode-card">
-            <div className="mode-label">Done-With-You</div>
-            <div className="mode-price">From £2k/mo</div>
-            <div className="mode-retainer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21.5 2v6h-6"/>
-                <path d="M21.34 13a10 10 0 1 1-2.84-8.36L21.5 8"/>
-              </svg>
-              <span>Monthly retainer</span>
-            </div>
-            <h3>Enable</h3>
-            <p className="mode-desc">Your team doesn't need to be technical to benefit from AI. They need someone showing them what's possible, keeping them on track, and making sure they're using the right tools for the job.</p>
+            <h3>Advisory</h3>
+            <p className="mode-desc">Regular checkpoints to keep your AI efforts on track.</p>
             <ul>
-              <li>Use bleeding-edge AI tools safely and securely</li>
-              <li>Curated guidance based on what's working right now</li>
-              <li>Clear paths from experimentation to real results</li>
-              <li>AI costs stay lean as usage scales</li>
-              <li>Answers when you need them, via Slack or your preferred channel</li>
+              <li>Know which tools and use cases are worth your time</li>
+              <li>Your team owns the execution, I keep them on track</li>
+              <li>Fast answers when they hit technical blockers</li>
             </ul>
-            <div className="mode-fit">Best for: Any team that wants to use AI effectively, whether they're technical or not.</div>
+            <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer" className="mode-cta">Learn more &#8594;</a>
+          </div>
+          <div className="mode-card">
+            <h3>Build</h3>
+            <p className="mode-desc">A working AI product, shipped into your environment.</p>
+            <ul>
+              <li>Go from idea to production in weeks, not months</li>
+              <li>Conversational apps, agents, automations</li>
+              <li>Your team doesn't need to build or maintain it</li>
+            </ul>
+            <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer" className="mode-cta">Learn more &#8594;</a>
+          </div>
+          <div className="mode-card">
+            <h3>Fractional / Interim CTO</h3>
+            <p className="mode-desc">I embed in your team as a technical owner within the business.</p>
+            <ul>
+              <li>A product roadmap you can execute</li>
+              <li>Team processes adapted for the AI era</li>
+              <li>Support with hiring, funding rounds, and scaling</li>
+            </ul>
+            <a href="https://cal.com/quantably/30min" target="_blank" rel="noopener noreferrer" className="mode-cta">Learn more &#8594;</a>
           </div>
         </ScrollReveal>
       </ScrollReveal>
 
       {/* Work */}
-      <ScrollReveal as="section" className="work">
+      <ScrollReveal as="section" id="case-studies" className="work">
         <div className="section-label">Case Studies</div>
         <div className="work-item">
           <h3 className="work-headline">Scaling coaching with AI agents</h3>
@@ -131,27 +122,10 @@ const HomePage = ({ data, location }) => {
           </div>
         </div>
 
-        <div className="work-item">
-          <h3 className="work-headline">Training app for diabetic athletes</h3>
-          <div className="work-meta">
-            <span className="work-name">GlucoseInsights</span>
-            <span>Solo</span>
-            <span>2024</span>
-            <em>Creator</em>
-          </div>
-          <p className="work-desc">
-            Multi-platform training app for Type 1 diabetic athletes, from
-            concept to 100+ active users. Integrates Dexcom, Strava, Apple
-            Health, Nightscout, and Tandem.
-          </p>
-          <div className="work-links">
-            <a href="https://glucoseinsights.com/" target="_blank" rel="noopener noreferrer" className="work-link">Live site &#8599;</a>
-          </div>
-        </div>
       </ScrollReveal>
 
       {/* About */}
-      <ScrollReveal as="section" className="about">
+      <ScrollReveal as="section" id="about" className="about">
         <div className="section-label">About</div>
         <div className="about-intro">
           <div className="about-photo">
@@ -174,8 +148,8 @@ const HomePage = ({ data, location }) => {
 
         <ScrollReveal className="timeline" staggerChildren>
           <div className="timeline-item">
-            <div className="timeline-year">Now</div>
-            <div className="timeline-text">Independent AI consultant. Helping companies ship AI products fast.</div>
+            <div className="timeline-year">2025 - Now</div>
+            <div className="timeline-text">Founded Quantably, a high-touch AI consultancy focused on helping companies build the right AI products.</div>
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2020 - 2025</div>
@@ -183,11 +157,11 @@ const HomePage = ({ data, location }) => {
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2018 - 2019</div>
-            <div className="timeline-text">Experian. ML for financial transaction categorisation at scale.</div>
+            <div className="timeline-text">Experian. AI for financial transaction categorisation at scale.</div>
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2015 - 2018</div>
-            <div className="timeline-text">Elsevier. ML across 500+ academic journals.</div>
+            <div className="timeline-text">Elsevier. AI across 500+ academic journals.</div>
           </div>
           <div className="timeline-item">
             <div className="timeline-year">2010 - 2015</div>

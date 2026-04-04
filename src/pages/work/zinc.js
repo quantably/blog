@@ -5,6 +5,16 @@ import ScrollReveal from "../../components/ScrollReveal"
 import Seo from "../../components/seo"
 
 const ZincCaseStudy = ({ location }) => {
+  React.useEffect(() => {
+    if (!window.location.hash) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+        })
+      })
+    }
+  }, [])
+
   return (
     <Layout location={location} title="Quantably">
       {/* Header */}

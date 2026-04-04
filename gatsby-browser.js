@@ -25,20 +25,45 @@ export const onInitialClientRender = () => {
   }
 };
 
-// Scroll to top on forward navigation, restore position on back/forward
-export const shouldUpdateScroll = ({ routerProps, getSavedScrollPosition }) => {
-  if (routerProps.location.action === 'POP') {
-    return getSavedScrollPosition(routerProps.location) || [0, 0];
+// Scroll to hash element or top of page
+export const shouldUpdateScroll = ({ routerProps }) => {
+  const { hash } = routerProps.location;
+  if (hash) {
+    // Let onRouteUpdate handle hash scrolling after render
+    return false;
   }
   return [0, 0];
 };
 
-// Optional: Re-run Mermaid on route updates if diagrams might be added dynamically
-export const onRouteUpdate = () => {
+// Re-run Mermaid on route updates, handle hash scrolling
+export const onRouteUpdate = ({ location }) => {
   try {
-    mermaid.run(); // Keep run() without args here too
-    console.log("[gatsby-browser.js] Mermaid rendering triggered on route update.");
+    mermaid.run();
   } catch (error) {
     console.error("[gatsby-browser.js] Error rendering Mermaid on route update:", error);
+  }
+
+  if (location.hash) {
+    requestAnimationFrame(() => {
+      const el = document.querySelector(location.hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+};
+
+// Handle hash on initial page load (e.g. direct navigation to /#about)
+export const onClientEntry = () => {
+  if (window.location.hash) {
+    // Wait for DOM to be ready
+    const scrollToHash = () => {
+      const el = document.querySelector(window.location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        requestAnimationFrame(scrollToHash);
+      }
+    };
+    // Delay to ensure content is rendered
+    setTimeout(scrollToHash, 100);
   }
 };
