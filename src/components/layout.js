@@ -67,7 +67,6 @@ const Layout = ({ location, title, children }) => {
 
       <footer className="site-footer">
         <span>&copy; {new Date().getFullYear()} Peter Wooldridge</span>
-        <span>Amsterdam, Netherlands</span>
       </footer>
     </div>
   )
